@@ -411,3 +411,5 @@ La mayoría de problemas se resuelven con paciencia y experimentación.
 
 *Última actualización: 2026-07-01*
 *Problemas no listados: consulta en el taller*
+
+```

@@ -227,6 +227,8 @@ Te comprendo. El status es X. Vamos a acelerar: Te paso con
 especialista que puede revisar prioridad. 1 minuto."
 ```
 ¿Cuál es mejor? ¿Puede el agente aprender a ser empático?
+```
+
 ## ✅ Qué hemos aprendido
 1. **El primer nivel es automatizable**: FAQ + seguimientos = 80%
 2. **La escalada debe ser rápida**: Ciudadano pasa a persona en minutos, no horas

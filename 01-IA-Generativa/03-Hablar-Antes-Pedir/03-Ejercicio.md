@@ -262,3 +262,6 @@ En el próximo documento, veremos lado a lado la comparación visual de ambos re
 **⏱️ Tiempo de lectura: 10 minutos**
 **💡 Dificultad: Principiante (aplicación práctica)**
 **🎯 Impacto: Directo en tu productividad diaria**
+
+```
+```

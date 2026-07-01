@@ -341,3 +341,6 @@ Ahora que entiendes, crea un análisis para TU flota:
 **Conclusión:** La Gema Inventario es tu aliada contra sorpresas operacionales. Úsala para prevenir, no para reaccionar.
 
 ¡Tu flota funcionará mejor, más tiempo, con menos problemas!
+
+```
+```

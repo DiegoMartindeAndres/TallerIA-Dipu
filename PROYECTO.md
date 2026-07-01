@@ -40,14 +40,15 @@ graph TD
     B4 --> B4b["01-Paradigma-Agentes/"]
     B4 --> B4c["02-Componentes/"]
 ```
-   📁 img/                      📂 Listo
- 📁 Extras/                        🟢 Completo
-    📄 Glosario.md               ✅ Creado
-    📄 Recursos.md               ✅ Creado
-    📄 FAQ.md                    ✅ Creado
-    📄 Troubleshooting.md        ✅ Creado
-    📄 Creditos.md               ✅ Creado
-```
+
+Estructura adicional:
+- 📁 img/                      📂 Listo
+- 📁 Extras/                   🟢 Completo
+ - 📄 Glosario.md             ✅ Creado
+ - 📄 Recursos.md             ✅ Creado
+ - 📄 FAQ.md                  ✅ Creado
+ - 📄 Troubleshooting.md      ✅ Creado
+ - 📄 Creditos.md             ✅ Creado
 ---
 ## 🎯 Tareas Activas
 ### En Ejecución (Agente Activo)

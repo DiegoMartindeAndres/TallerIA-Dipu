@@ -199,3 +199,5 @@ Ahora que entiendes el flujo, crea un plan para UN procedimiento real que gestio
 ✅ Comunicar plazos a jefatura
 **Conclusión:** La Gema Procedimientos es tu plan maestro. Úsala para anticipar, no para reaccionar.
 ¡Procedimientos sin sorpresas = administración profesional!
+
+```

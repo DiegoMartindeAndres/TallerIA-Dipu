@@ -235,3 +235,6 @@ Imagina un contrato que pronto necesitarás revisar:
 ✓ Documentar análisis protege a tu administración  
 
 **Próximo paso:** Ahora pasamos a Gemas de Subvenciones - un contexto completamente diferente.
+
+```
+```

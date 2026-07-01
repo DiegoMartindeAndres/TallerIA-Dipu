@@ -21,9 +21,11 @@
 ---
 ## 🎯 DESGLOSE POR BLOQUE
 ### BLOQUE 1: IA GENERATIVA
-```
+
 ████████████████████████████████░░ 84.4%
+
 ### Bloque 1: IA Generativa
+
 ```mermaid
 graph TD
     A["📊 BLOQUE 1: IA GENERATIVA<br/>84.4% Completado"]
@@ -52,108 +54,121 @@ graph TD
     A --> B5
     A --> B6
 ```
-TOTAL: 27/32 (84.4%) 🟡
+
+TOTAL: 27/32 (84.4%) 🟡  
 README: ✅ Listo
-```
 **Tiempo:** 6-8 horas de aprendizaje  
 **Objetivo:** Dominar prompting  
 **Salida esperada:** Prompts efectivos para administración  
 ---
 ### BLOQUE 2: GEMAS
+
 ```mermaid
 graph TD
-    A["GEMAS (43.6%)"]
-    B["Qué Son Gemas 4/4"]
-    B --> B1["Concepto"]
-    B --> B2["Diferencias"]
-    B --> B3["Ventajas"]
-    B --> B4["Arquitectura"]
-    C["Tu Primera Gema 5/5"]
-    C --> C1["README"]
-    C --> C2["Sistema"]
-    C --> C3["Contexto"]
-    D["Gema Normativa 3/3"]
-    D --> D1["Diseño"]
-    D --> D2["Prompts"]
-    D --> D3["Ejercicio"]
-    E["Gema Contratos 4/4"]
-    E --> E1["README"]
-    E --> E2["Diseño"]
-    F["Gema Subvenciones 4/4"]
-    F --> F1["README"]
-    F --> F2["Diseño"]
-    A --> B
-    A --> C
-    A --> D
-    A --> E
-    A --> F
+   A["GEMAS (43.6%)"]
+   B["Qué Son Gemas 4/4"]
+   B --> B1["Concepto"]
+   B --> B2["Diferencias"]
+   B --> B3["Ventajas"]
+   B --> B4["Arquitectura"]
+   C["Tu Primera Gema 5/5"]
+   C --> C1["README"]
+   C --> C2["Sistema"]
+   C --> C3["Contexto"]
+   D["Gema Normativa 3/3"]
+   D --> D1["Diseño"]
+   D --> D2["Prompts"]
+   D --> D3["Ejercicio"]
+   E["Gema Contratos 4/4"]
+   E --> E1["README"]
+   E --> E2["Diseño"]
+   F["Gema Subvenciones 4/4"]
+   F --> F1["README"]
+   F --> F2["Diseño"]
+   A --> B
+   A --> C
+   A --> D
+   A --> E
+   A --> F
 ```
-   Diseño
-   Prompts
-   Ejercicio
- 🔄 Gema de Inventario: 4/4 (EN PROCESO)
-   README
-   Diseño
-   Prompts
-   Ejercicio
- 🔄 Gema de Procedimientos: 4/4 (EN PROCESO)
-   README
-   Diseño
-   Prompts
-   Ejercicio
- 🔄 Tu Gema Personal: 5/5 (EN PROCESO)
-    README
-    Ideación
-    Plantilla
-    Desarrollo
-    Presentación
-TOTAL ESTIMADO: 41/41 (100%) 🟢 (en construcción)
+
+**Gema de Expedientes: 3/3 (EN PROCESO)**
+- Diseño
+- Prompts
+- Ejercicio
+
+**🔄 Gema de Inventario: 4/4 (EN PROCESO)**
+- README
+- Diseño
+- Prompts
+- Ejercicio
+
+**🔄 Gema de Procedimientos: 4/4 (EN PROCESO)**
+- README
+- Diseño
+- Prompts
+- Ejercicio
+
+**🔄 Tu Gema Personal: 5/5 (EN PROCESO)**
+- README
+- Ideación
+- Plantilla
+- Desarrollo
+- Presentación
+
+TOTAL ESTIMADO: 41/41 (100%) 🟢 (en construcción)  
 README: ✅ Listo
-```
 **Tiempo:** 8-10 horas de aprendizaje  
 **Objetivo:** Crear Gemas especializadas  
 **Salida esperada:** 1 Gema personal funcional  
 ---
 ### BLOQUE 3: IA AGÉNTICA
-```
+
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 4%
-Documentos (completados + en construcción):
- ✅ README: 1/1
- 🔄 Paradigma Agentes: 4/4 (EN PROCESO)
-   Definición
-   vs Chatbot
-   Características
-   Casos Uso
- 🔄 Componentes: 6/6 (EN PROCESO)
-   Planificación
-   Herramientas
-   Memoria
-   Ejecución
-   Supervisión
-   Evaluación
- 🔄 Agentes Prácticos: 4/4 (EN PROCESO)
-   Flujo Excel
-   Procesamiento Documentos
-   Soporte Ciudadanos
-   Análisis Datos
- 🔄 Agentes Personales: 9/9 (EN PROCESO)
-   Concepto
-   OpenClaw Qué Es
-   OpenClaw Capacidades
-   OpenClaw Casos
-   OpenClaw Ejercicio
-   Hermes Qué Es
-   Hermes Capacidades
-   Hermes Casos
-   Hermes Ejercicio
- 🔄 Hacia El Futuro: 4/4 (EN PROCESO)
-    Tendencias
-    Prepararse
-    Oportunidades
-    Reflexión
-TOTAL ESTIMADO: 28/28 (100%) 🟢 (en construcción)
+
+**Documentos (completados + en construcción):**
+
+✅ README: 1/1
+
+**🔄 Paradigma Agentes: 4/4 (EN PROCESO)**
+- Definición
+- vs Chatbot
+- Características
+- Casos Uso
+
+**🔄 Componentes: 6/6 (EN PROCESO)**
+- Planificación
+- Herramientas
+- Memoria
+- Ejecución
+- Supervisión
+- Evaluación
+
+**🔄 Agentes Prácticos: 4/4 (EN PROCESO)**
+- Flujo Excel
+- Procesamiento Documentos
+- Soporte Ciudadanos
+- Análisis Datos
+
+**🔄 Agentes Personales: 9/9 (EN PROCESO)**
+- Concepto
+- OpenClaw Qué Es
+- OpenClaw Capacidades
+- OpenClaw Casos
+- OpenClaw Ejercicio
+- Hermes Qué Es
+- Hermes Capacidades
+- Hermes Casos
+- Hermes Ejercicio
+
+**🔄 Hacia El Futuro: 4/4 (EN PROCESO)**
+- Tendencias
+- Prepararse
+- Oportunidades
+- Reflexión
+
+TOTAL ESTIMADO: 28/28 (100%) 🟢 (en construcción)  
 README: ✅ Listo
-```
 **Tiempo:** 8-10 horas de aprendizaje  
 **Objetivo:** Entender y diseñar agentes  
 **Salida esperada:** Proyecto de automatización  

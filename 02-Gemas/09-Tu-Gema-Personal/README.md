@@ -128,3 +128,5 @@ R: Totalmente. Motiva a otros a crear las suyas.
 - **Feedback de peers:** Pide a compañeros que la prueben
 - **Mejora continua:** No es "terminada", es "en evolución"
 ¡Adelante con Tu Gema Personal!
+
+```

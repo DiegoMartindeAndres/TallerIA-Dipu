@@ -283,3 +283,6 @@ Ahora que entiendes cómo validar, elige otro tipo de expediente y crea un caso 
 - No confiar ciegamente en respuestas automáticas
 
 ¡Uso responsable de Gemas = administración más eficiente y menos errores!
+
+```
+```

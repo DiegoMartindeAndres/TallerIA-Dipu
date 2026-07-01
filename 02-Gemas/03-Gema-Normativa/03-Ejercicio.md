@@ -173,3 +173,6 @@ Un sindicato solicita: "Salarios por categoría de empleados públicos"
 ✓ Consulta siempre que haya duda legal real  
 
 **Próximo paso:** Ahora que dominas Gemas de Normativa, pasemos a Gemas de Contratos.
+
+```
+```

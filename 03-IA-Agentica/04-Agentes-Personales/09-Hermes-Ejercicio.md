@@ -230,3 +230,5 @@ PAYBACK: 5-6 meses
 5. **Operación escala**: Mejora constante
 ---
 **Próximo paso**: El futuro. Tendencias en IA Agéntica.
+
+```
