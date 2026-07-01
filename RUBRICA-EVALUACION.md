@@ -298,11 +298,10 @@ Evalúa creatividad: 🔴 Pasivo | 🟡 Activo | 🟢 Innovador
 Si implementas evaluación, puedes emitir certificado:
 
 ```
-═══════════════════════════════════════════════════════════
+---
     CERTIFICADO DE COMPLETACIÓN
     Taller: Inteligencia Artificial para Administración
-═══════════════════════════════════════════════════════════
-
+---
 Certifica que [NOMBRE] ha completado exitosamente el taller de
 IA, cubriendo:
 
@@ -322,7 +321,7 @@ Calificación: [A, B, C] o Sobresaliente/Aprobado/Aprobado con Mérito
 
 Emitido: [FECHA]
 Firmado: [EDUCADOR]
-═══════════════════════════════════════════════════════════
+---
 ```
 
 ---
@@ -338,4 +337,5 @@ Firmado: [EDUCADOR]
 **Última actualización:** 2026-07-01  
 **Versión:** 1.0  
 **Licencia:** Uso libre para educadores
+
 

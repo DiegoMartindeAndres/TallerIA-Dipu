@@ -204,10 +204,9 @@ Restricciones: NO aprueba obras, solo valida admisibilidad
 Completa esta plantilla para documentar tu idea:
 
 ```
-═══════════════════════════════════════════════════════
+---
 FICHA DE MI GEMA PERSONAL
-═══════════════════════════════════════════════════════
-
+---
 NOMBRE DE LA GEMA:
 _________________________________________________
 
@@ -229,10 +228,9 @@ TASA DE USO:
 IMPACTO SI FUNCIONA:
 _________________________________________________
 
-═══════════════════════════════════════════════════════
+---
 FUNCIONALIDADES
-═══════════════════════════════════════════════════════
-
+---
 1. _________________________________________________
 2. _________________________________________________
 3. _________________________________________________
@@ -244,10 +242,9 @@ RESTRICCIONES (qué NO puede hacer):
 - _________________________________________________
 - _________________________________________________
 
-═══════════════════════════════════════════════════════
+---
 CONTEXTO NECESARIO
-═══════════════════════════════════════════════════════
-
+---
 Normas/procedimientos base:
 _________________________________________________
 
@@ -263,18 +260,16 @@ _________________________________________________
 Plazos críticos:
 _________________________________________________
 
-═══════════════════════════════════════════════════════
+---
 CASOS DE USO TÍPICOS
-═══════════════════════════════════════════════════════
-
+---
 Caso 1: _________________________________________
 Caso 2: _________________________________________
 Caso 3: _________________________________________
 
-═══════════════════════════════════════════════════════
+---
 MÉTRICAS DE ÉXITO
-═══════════════════════════════════════════════════════
-
+---
 ¿Cómo sé que funciona bien?
 - _________________________________________________
 - _________________________________________________
@@ -282,7 +277,7 @@ MÉTRICAS DE ÉXITO
 
 Objetivo de precisión: ___% de aciertos
 
-═══════════════════════════════════════════════════════
+---
 ```
 
 ## Ejercicio: Completar tu ficha
@@ -299,10 +294,9 @@ Objetivo de precisión: ___% de aciertos
 <summary>💡 Ejemplo completado: Gema para validar expedientes de subvención</summary>
 
 ```
-═══════════════════════════════════════════════════════
+---
 FICHA DE MI GEMA PERSONAL
-═══════════════════════════════════════════════════════
-
+---
 NOMBRE DE LA GEMA:
 Validador de Expedientes de Subvención
 
@@ -325,10 +319,9 @@ IMPACTO SI FUNCIONA:
 - Evitar que expedientes incompletos lleguen a comisión (ahorro de tiempo de comisión)
 - Consistencia: mismos criterios para todos
 
-═══════════════════════════════════════════════════════
+---
 FUNCIONALIDADES
-═══════════════════════════════════════════════════════
-
+---
 1. Verificar que tiene TODA documentación requerida (listado de checklist)
 2. Validar que solicitante es elegible (no recibió misma subvención en últimos 2 años)
 3. Revisar que importes declarados son coherentes (gasto declarado ≤ presupuesto)
@@ -340,10 +333,9 @@ RESTRICCIONES (qué NO puede hacer):
 - NO aprueba definitivamente (solo valida admisibilidad)
 - NO accede a sistemas de subsidios anteriores (requiere datos manuales)
 
-═══════════════════════════════════════════════════════
+---
 CONTEXTO NECESARIO
-═══════════════════════════════════════════════════════
-
+---
 Normas/procedimientos base:
 - Bases de la convocatoria 2024
 - Ley de Subvenciones de Andalucía
@@ -369,10 +361,9 @@ Plazos críticos:
 - Validación admisibilidad: máximo 20 días desde cierre
 - Notificación a rechazados: antes de que comisión comience
 
-═══════════════════════════════════════════════════════
+---
 CASOS DE USO TÍPICOS
-═══════════════════════════════════════════════════════
-
+---
 Caso 1: Solicitud incompleta - falta anexo de presupuesto detallado
        Gema debe identificar e indicar: "Subsanable. Requiere 3 días"
 
@@ -382,10 +373,9 @@ Caso 2: Solicitante recibió misma subvención hace 1 año
 Caso 3: Importe solicitado 5% mayor que presupuesto declarado
        Gema debe alertar: "Inconsistencia. Revisar si es error transcripción o incumplimiento"
 
-═══════════════════════════════════════════════════════
+---
 MÉTRICAS DE ÉXITO
-═══════════════════════════════════════════════════════
-
+---
 ¿Cómo sé que funciona bien?
 - Aciertos de admisibilidad: coincide 100% con revisión manual
 - Alertas precisas: no hay falsos positivos (alertas de cosas que luego sí están bien)
@@ -394,7 +384,7 @@ MÉTRICAS DE ÉXITO
 
 Objetivo de precisión: 98% de aciertos
 
-═══════════════════════════════════════════════════════
+---
 ```
 
 </details>
@@ -424,3 +414,4 @@ Ahora tienes clara:
 ✅ Obtuviste feedback de compañero
 
 **Estás listo para construir.** 🚀
+

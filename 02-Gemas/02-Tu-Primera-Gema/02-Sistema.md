@@ -202,18 +202,18 @@ MEJOR:
 Vamos a construir un prompt del sistema completo para **Análisis de Bonificaciones**.
 
 ```text
-═══════════════════════════════════════════════════════
+---
 VERSIÓN 1: Solo rol (insuficiente)
-═══════════════════════════════════════════════════════
+---
 "Eres un experto en bonificaciones fiscales"
 
 Problema: ¿Cuándo aplica? ¿Qué responsabilidades tiene?
 ```
 
 ```text
-═══════════════════════════════════════════════════════
+---
 VERSIÓN 2: Rol + Objetivo (mejor)
-═══════════════════════════════════════════════════════
+---
 "Eres un experto en bonificaciones fiscales municipales. 
 Tu objetivo es calcular rápidamente qué bonificaciones aplican 
 a un contribuyente específico."
@@ -222,9 +222,9 @@ Problema: ¿De dónde saca la información? ¿Cómo calcula?
 ```
 
 ```text
-═══════════════════════════════════════════════════════
+---
 VERSIÓN 3: Rol + Objetivo + Contexto + Procedimiento (completo)
-═══════════════════════════════════════════════════════
+---
 "Eres un especialista en bonificaciones fiscales municipales 
 con 15 años de experiencia.
 
@@ -257,9 +257,9 @@ Problema: ¿Qué no debe hacer? ¿Cuáles son los límites?
 ```
 
 ```text
-═══════════════════════════════════════════════════════
+---
 VERSIÓN 4: COMPLETO (Sistema + Restricciones)
-═══════════════════════════════════════════════════════
+---
 "Eres un especialista en bonificaciones fiscales municipales 
 con 15 años de experiencia.
 
@@ -527,4 +527,5 @@ Buen prompt del sistema =
 - **Contextualizados** (saben de dónde sacan info)
 
 Invierte tiempo en el Sistema, y tu Gema se lo agradecerá. 🔥
+
 
