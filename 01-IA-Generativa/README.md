@@ -46,6 +46,14 @@ Roles, formatos, chain-of-thought, cadenas de prompts.
 Redacción, resúmenes, traducción, análisis, brainstorming, **Excel avanzado**.  
 📂 `06-Casos-Practicos/`
 
+### 7. **Generación de Imágenes** 🎨
+Crea carteles, posters y materiales visuales con **Nana Banana Pro**.  
+📂 `07-Generacion-Imagenes/`
+
+### 8. **Generación de Audio** 🎵
+Genera cuñas publicitarias y música con **SUNO**.  
+📂 `08-Generacion-Audio/`
+
 ---
 
 ## 🗺️ Ruta Recomendada
@@ -102,11 +110,11 @@ Redacción, resúmenes, traducción, análisis, brainstorming, **Excel avanzado*
 
 ## 📊 Estadísticas del Bloque
 
-- **Documentos totales**: 35
-- **Ejercicios prácticos**: 50+
-- **Ejemplos de prompts**: 100+
-- **Casos de uso reales**: 15+
-- **Estimado de tiempo**: 6-8 horas (presencial) o 10-12 horas (autoaprendizaje)
+- **Documentos totales**: 50+
+- **Ejercicios prácticos**: 70+
+- **Ejemplos de prompts**: 150+
+- **Casos de uso reales**: 25+
+- **Estimado de tiempo**: 8-10 horas (presencial) o 14-16 horas (autoaprendizaje)
 
 ---
 
@@ -232,7 +240,18 @@ Cada documento sigue este patrón:
 30. [`05-Brainstorming.md`](./06-Casos-Practicos/05-Brainstorming.md) - Generación de ideas
 31. [`06-Excel.md`](./06-Casos-Practicos/06-Excel.md) - Caso Excel profesional
 
----
+### 07-Generacion-Imagenes 🎨
+32. [`README.md`](./07-Generacion-Imagenes/README.md) - Introducción a Nana Banana Pro
+33. [`01-Primeros-Pasos.md`](./07-Generacion-Imagenes/01-Primeros-Pasos.md) - Primeras generaciones
+34. [`02-Anatomia-Prompts.md`](./07-Generacion-Imagenes/02-Anatomia-Prompts.md) - Estructura de prompts
+35. [`03-Estilos-y-Efectos.md`](./07-Generacion-Imagenes/03-Estilos-y-Efectos.md) - Controlando el look
+36. [`04-Carteles-y-Posters.md`](./07-Generacion-Imagenes/04-Carteles-y-Posters.md) - Casos reales
+
+### 08-Generacion-Audio 🎵
+37. [`README.md`](./08-Generacion-Audio/README.md) - Introducción a SUNO
+38. [`01-Primeros-Pasos.md`](./08-Generacion-Audio/01-Primeros-Pasos.md) - Primeras generaciones
+39. [`02-Estructura-Prompts.md`](./08-Generacion-Audio/02-Estructura-Prompts.md) - Estructura de prompts
+40. [`03-Cunas-Publicitarias.md`](./08-Generacion-Audio/03-Cunas-Publicitarias.md) - Cuñas para campañas
 
 ## 🚀 ¿Por Dónde Empiezo?
 
@@ -287,15 +306,14 @@ Pasas al [Bloque 2: Gemas](../02-Gemas/README.md) donde construirás asistentes 
 ```
                     IA GENERATIVA
                          |
-                    _____+_____
-                   |     |     |
-            Conceptos  Prompting  Casos
-            Básicos    Avanzado   Prácticos
-              |          |           |
-         (Qué es)    (Técnicas)  (Aplicación)
-              |          |           |
-         (Cómo        (Método     (Excel,
-          funciona)  Karpathy)   Redacción)
+           _______________+________________
+           |       |        |       |      |
+        Conceptos Prompting Hablar Karpathy Casos Prácticos
+        Básicos   Básico     Antes  Método   + VISUAL
+          |        |        Pedir   |       (Imágenes)
+          |        |         |      |       + AUDIO
+          |        |         |      |       (Música)
+      (Qué es)   (Técnicas) (QA)  (Advanced)(Multimodal)
 ```
 
 ---

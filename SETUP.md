@@ -140,6 +140,70 @@ Probablemente ya lo tienes. Asegúrate de que esté actualizado.
 
 ---
 
+## 📄 Un Detalle Importante: Formatos de Texto
+
+### El Problema: WYSIWYG vs Markdown
+
+Probablemente trabajas con documentos en **Word, PDF, Google Docs**. Estos usan formato [**WYSIWYG**](https://en.wikipedia.org/wiki/WYSIWYG) (What You See Is What You Get).
+
+**¿Por qué importa?**
+
+| Aspecto | WYSIWYG (Word, PDF) | Markdown |
+|--------|----------|----------|
+| Datos | 5% contenido, 95% formato | 99% contenido, 1% formato |
+| Tamaño de archivo | Grande | Muy pequeño |
+| IA lo entiende | Difícil (mucho "ruido") | Fácil (texto puro) |
+| Ejemplo | `<font color="blue" size="14">Hola</font>` | `Hola` |
+
+**En términos de IA:**
+- Word/PDF: "Lee un documento con colores, márgenes, fuentes..."
+- Markdown: "Lee solo el contenido puro"
+
+### Solución: Markdown (y Mermaid)
+
+**Markdown** es un formato simple que entiende mejor la IA:
+
+```markdown
+# Título Principal
+
+## Subtítulo
+
+- Punto 1
+- Punto 2
+
+**Texto en negrita** y *texto en cursiva*
+
+```código aquí```
+```
+
+**¿Dónde lo ves?**
+- ✅ **Este taller está escrito en Markdown** (README.md, SETUP.md, todos los documentos)
+- ✅ GitHub muestra perfectamente Markdown
+- ✅ La IA lo procesa 100 veces más rápido que PDF
+
+**Bonus: Mermaid para Diagramas**
+
+Si necesitas diagramas, en lugar de insertar imágenes (que pesan mucho), usa **Mermaid**:
+
+```mermaid
+graph TD
+    A["Entrada de datos"] --> B["Procesar"]
+    B --> C["Salida"]
+```
+
+Markdown convierte ese código en un diagrama automáticamente.
+
+### 💡 Consejo Práctico
+
+Cuando compartas documentos con la IA, **evita PDF o Word**, usa:
+- ✅ Copiar/pegar el texto directamente
+- ✅ Subir archivos en Markdown (.md)
+- ✅ Usar Google Sheets (mejor que Excel binario)
+
+**Resultado:** Respuestas más rápidas, precisas y eficientes de la IA.
+
+---
+
 ## 🎯 Tu Primer Descubrimiento: "Prompt 0"
 
 Antes de hacer prompts "serios", vamos a hacer un **experimento** para entender algo fundamental sobre la IA:
