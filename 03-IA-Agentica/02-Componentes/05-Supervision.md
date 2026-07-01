@@ -39,24 +39,27 @@ La diferencia: Juana necesita pausa para pensar. El agente es instantáneo. Pero
 ## 🛡️ Qué Debe Revisar Siempre un Humano
 
 ### Decisiones sobre Dinero (Alto Valor Financiero)
-```
-POLÍTICA DE SUPERVISIÓN:
-- Subvención < €1.000 → Agente APRUEBA automático
-- Subvención €1.000-€5.000 → Agente PROPONE, jefe APRUEBA (5 min)
-- Subvención > €5.000 → Humano REVISA completamente (15 min)
-- Ayuda excepcional > €10.000 → Director AUTORIZA personalmente
+
+```mermaid
+graph TD
+    A["💰 POLÍTICA DE SUPERVISIÓN"]
+    A --> A1["< €1.000: Agente aprueba automático"]
+    A --> A2["€1.000-€5.000: Agente propone + Jefe aprueba"]
+    A --> A3["> €5.000: Humano revisa completamente"]
+    A --> A4["> €10.000: Director autoriza personalmente"]
 ```
 
 ### Decisiones sobre Derechos del Ciudadano
-```
-Ejemplos:
-- ¿Puede denegarle acceso a un documento? → Humano revisa
-- ¿Puede aprobar/rechazar una solicitud? → Humano verifica criterios
-- ¿Puede cambiar plazos? → Humano autoriza
 
-Razonamiento:
-Si el agente comete error, el ciudadano puede estar meses sin su derecho.
-Por eso, revisión humana es obligatoria.
+```mermaid
+graph TD
+    A["⚖️ DERECHOS DEL CIUDADANO"]
+    A --> B["¿Denegarle acceso?"]
+    B --> B1["→ Humano revisa"]
+    A --> C["¿Aprobar/rechazar?"]
+    C --> C1["→ Humano verifica"]
+    A --> D["¿Cambiar plazos?"]
+    D --> D1["→ Humano autoriza"]
 ```
 
 ### Decisiones con Datos Sensibles

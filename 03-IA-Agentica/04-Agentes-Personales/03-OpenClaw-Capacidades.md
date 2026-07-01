@@ -18,22 +18,22 @@ OpenClaw puede conectarse a cualquier base de datos:
 - Bases de datos en nube (AWS RDS, Azure SQL)
 
 ### Cómo funciona
-```
-CONFIGURACIÓN (5 minutos):
-┌─ Credenciales de BD
-├─ Host: servidor.ayuntamiento.local
-├─ Usuario: admin
-├─ Contraseña: [encriptada]
-├─ Base de datos: ciudadanos_2024
-└─ Tabla: solicitudes
-
-RESULTADO:
-El agente ahora puede:
-├─ LEER: "¿Hay solicitudes de Juan?"
-├─ CONTAR: "¿Cuántas solicitudes hoy?"
-├─ FILTRAR: "¿Solicitudes no resueltas?"
-├─ CALCULAR: "Suma total de montos"
-└─ ACTUALIZAR: "Marcar como resuelta"
+```mermaid
+graph TD
+    A["⚙️ CONFIGURACIÓN BD"]
+    A --> A1["Host: servidor.ayuntamiento.local"]
+    A --> A2["Usuario: admin"]
+    A --> A3["BD: ciudadanos_2024"]
+    A --> A4["Tabla: solicitudes"]
+    
+    B["✅ RESULTADO"]
+    B --> B1["LEER: ¿Hay solicitudes de Juan?"]
+    B --> B2["CONTAR: ¿Cuántas solicitudes hoy?"]
+    B --> B3["FILTRAR: ¿Solicitudes no resueltas?"]
+    B --> B4["CALCULAR: Suma total de montos"]
+    B --> B5["ACTUALIZAR: Marcar como resuelta"]
+    
+    A --> B
 ```
 
 ### Caso de Uso
@@ -58,20 +58,21 @@ OpenClaw puede llamar a cualquier API:
 - Servicios de email, SMS
 
 ### Cómo funciona
-```
-CONFIGURACIÓN:
-┌─ URL de API: https://api.catastro.es/v1/search
-├─ Tipo: GET/POST/PUT
-├─ Parámetros: coordenadas
-├─ Autenticación: Token Bearer [encriptado]
-└─ Respuesta esperada: [JSON estructura]
-
-RESULTADO:
-El agente ahora puede:
-├─ VALIDAR: "¿DNI válido?"
-├─ CONSULTAR: "¿Información de esta propiedad?"
-├─ CRUZAR: "¿Conflictos de interés?"
-└─ INTEGRAR: Datos de 5 fuentes simultáneamente
+```mermaid
+graph TD
+    A["⚙️ CONFIGURACIÓN API"]
+    A --> A1["URL: https://api.catastro.es/v1/search"]
+    A --> A2["Tipo: GET/POST"]
+    A --> A3["Parámetros: coordenadas"]
+    A --> A4["Autenticación: Token Bearer"]
+    
+    B["✅ RESULTADO"]
+    B --> B1["VALIDAR: ¿DNI válido?"]
+    B --> B2["CONSULTAR: ¿Info de propiedad?"]
+    B --> B3["CRUZAR: ¿Conflictos de interés?"]
+    B --> B4["INTEGRAR: 5 fuentes simultáneamente"]
+    
+    A --> B
 ```
 
 ### Caso de Uso

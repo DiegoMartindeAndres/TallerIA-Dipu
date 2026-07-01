@@ -34,45 +34,41 @@
 ```
 ████████████████████████████████░░ 84.4%
 
-Documentos:
-├─ ✅ Conceptos Básicos: 4/4
-│  ├─ Qué es IA
-│  ├─ Cómo Funciona
-│  ├─ Limitaciones
-│  └─ Alucinaciones
-│
-├─ ✅ Prompting Básico: 5/5
-│  ├─ Estructura Prompts
-│  ├─ Claridad
-│  ├─ Contexto
-│  ├─ Ejemplos
-│  └─ Iteración
-│
-├─ ✅ Hablar Antes Pedir: 5/5
-│  ├─ Concepto
-│  ├─ Técnica
-│  ├─ Ejercicio
-│  ├─ Comparación
-│  └─ Casos Reales
-│
-├─ ✅ Método Karpathy: 6/6
-│  ├─ Introducción
-│  ├─ Detalle
-│  ├─ Ejemplo 1
-│  ├─ Ejemplo 2
-│  ├─ Ejercicio
-│  └─ Karpathy.md (MARP)
-│
-├─ ✅ Prompting Avanzado: 5/5
-│  ├─ Roles Especializados
-│  ├─ Formatos Salida
-│  ├─ Chain of Thought
-│  ├─ Restricciones
-│  └─ Cadenas Tareas
-│
-└─ ✅ Casos Prácticos: 2/2
-   ├─ Excel Avanzado
-   └─ [1 doc pendiente - Excel2]
+### Bloque 1: IA Generativa
+
+```mermaid
+graph TD
+    A["📊 BLOQUE 1: IA GENERATIVA<br/>84.4% Completado"]
+    
+    B1["✅ Conceptos Básicos 4/4"]
+    B1 --> B1A["Qué es IA"]
+    B1 --> B1B["Cómo Funciona"]
+    B1 --> B1C["Limitaciones"]
+    B1 --> B1D["Alucinaciones"]
+    
+    B2["✅ Prompting Básico 5/5"]
+    B2 --> B2A["Estructura"]
+    B2 --> B2B["Claridad"]
+    B2 --> B2C["Contexto"]
+    B2 --> B2D["Ejemplos"]
+    B2 --> B2E["Iteración"]
+    
+    B3["✅ Hablar Antes Pedir 5/5"]
+    B3 --> B3A["Concepto"]
+    B3 --> B3B["Técnica"]
+    B3 --> B3C["Ejercicio"]
+    
+    B4["✅ Método Karpathy 6/6"]
+    B5["✅ Prompting Avanzado 5/5"]
+    B6["✅ Casos Prácticos 2/2"]
+    
+    A --> B1
+    A --> B2
+    A --> B3
+    A --> B4
+    A --> B5
+    A --> B6
+```
 
 TOTAL: 27/32 (84.4%) 🟡
 README: ✅ Listo
@@ -86,42 +82,40 @@ README: ✅ Listo
 
 ### BLOQUE 2: GEMAS
 
+```mermaid
+graph TD
+    A["GEMAS (43.6%)"]
+    
+    B["Qué Son Gemas 4/4"]
+    B --> B1["Concepto"]
+    B --> B2["Diferencias"]
+    B --> B3["Ventajas"]
+    B --> B4["Arquitectura"]
+    
+    C["Tu Primera Gema 5/5"]
+    C --> C1["README"]
+    C --> C2["Sistema"]
+    C --> C3["Contexto"]
+    
+    D["Gema Normativa 3/3"]
+    D --> D1["Diseño"]
+    D --> D2["Prompts"]
+    D --> D3["Ejercicio"]
+    
+    E["Gema Contratos 4/4"]
+    E --> E1["README"]
+    E --> E2["Diseño"]
+    
+    F["Gema Subvenciones 4/4"]
+    F --> F1["README"]
+    F --> F2["Diseño"]
+    
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
 ```
-████████████████░░░░░░░░░░░░░░░░ 43.6%
-
-Documentos (completados + en construcción):
-├─ ✅ Qué Son Gemas: 4/4
-│  ├─ Concepto
-│  ├─ Diferencias
-│  ├─ Ventajas
-│  └─ Arquitectura
-│
-├─ ✅ Tu Primera Gema: 5/5 (en construcción)
-│  ├─ README
-│  ├─ Sistema
-│  ├─ Contexto
-│  ├─ Refinamiento
-│  └─ Testing
-│
-├─ ✅ Gema de Normativa: 3/3
-│  ├─ Diseño
-│  ├─ Prompts Ejemplo
-│  └─ Ejercicio
-│
-├─ ✅ Gema de Contratos: 4/4
-│  ├─ README
-│  ├─ Diseño
-│  ├─ Prompts
-│  └─ Ejercicio
-│
-├─ ✅ Gema de Subvenciones: 4/4
-│  ├─ README
-│  ├─ Diseño
-│  ├─ Prompts
-│  └─ Ejercicio
-│
-├─ 🔄 Gema de Expedientes: 4/4 (EN PROCESO)
-│  ├─ README
 │  ├─ Diseño
 │  ├─ Prompts
 │  └─ Ejercicio

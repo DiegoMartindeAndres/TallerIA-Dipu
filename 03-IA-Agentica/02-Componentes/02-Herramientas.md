@@ -34,18 +34,19 @@ Resultado: Email realmente enviado
 ## 📚 Ejemplos de Herramientas Comunes
 
 ### Herramienta 1: Base de Datos
-```
-Qué hace: Acceso a información de tu municipio
-Ejemplos:
-  - BD de ciudadanos (nombre, DNI, email)
-  - BD de solicitudes (estado, documentos, resolución)
-  - BD de normativa (leyes, criterios)
-  - BD de tasas (tarifas municipales)
 
-Cómo la usa el agente:
-Agente: "Necesito datos de ciudadano Juan García"
-[Usa herramienta: Consulta BD]
-Resultado: BD devuelve: "DNI: 12345678-X, email: juan@mail.com"
+```mermaid
+graph TD
+    A["💾 BASE DE DATOS"]
+    A --> A1["Ciudadanos"]
+    A --> A2["Solicitudes"]
+    A --> A3["Normativa"]
+    A --> A4["Tasas municipales"]
+    
+    B["✅ USO POR AGENTE"]
+    B --> B1["Consulta datos"]
+    B --> B2["Valida información"]
+    B --> B3["Extrae criterios"]
 ```
 
 ### Herramienta 2: Email

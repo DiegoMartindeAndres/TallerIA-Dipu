@@ -23,22 +23,23 @@ Un **agente personal** es un asistente IA que:
 
 ### Comparación: Asistente General vs Personal
 
-```
-CHATBOT GENERAL (ChatGPT, Claude)
-├─ Capacidades: Amplias (cualquier cosa)
-├─ Contexto: Ninguno (no sabe quién eres)
-├─ Persistencia: Olvida entre sesiones
-├─ Privacidad: Información se guarda en empresa
-├─ Especialización: 0% (generalista)
-├─ Ventaja: Acceso inmediato
-
-AGENTE PERSONAL
-├─ Capacidades: Especializadas (tu trabajo)
-├─ Contexto: Completo (sabe tu rol, procesos)
-├─ Persistencia: Recuerda TODO (1 año+ de contexto)
-├─ Privacidad: 100% (datos locales, cifrados)
-├─ Especialización: 100% (experto EN TI)
-├─ Ventaja: Verdaderamente útil para tu trabajo
+```mermaid
+graph TD
+    A["🤖 CHATBOT GENERAL<br/>ChatGPT, Claude"]
+    A --> A1["Capacidades: Amplias"]
+    A --> A2["Contexto: Ninguno"]
+    A --> A3["Persistencia: Olvida"]
+    A --> A4["Privacidad: Empresa"]
+    A --> A5["Especialización: 0%"]
+    A --> A6["Ventaja: Acceso inmediato"]
+    
+    B["👤 AGENTE PERSONAL<br/>Tu Asistente"]
+    B --> B1["Capacidades: Especializadas"]
+    B --> B2["Contexto: Completo"]
+    B --> B3["Persistencia: Recuerda TODO"]
+    B --> B4["Privacidad: 100% Local"]
+    B --> B5["Especialización: 100%"]
+    B --> B6["Ventaja: Útil para tu trabajo"]
 ```
 
 ## 💡 Casos de Uso: Tu Agente Personal
@@ -50,17 +51,15 @@ TÚ: "Tengo reunión con el director a las 10,
      necesito resumir los últimos 3 meses de subvenciones"
 
 AGENTE:
-├─ Accede a tu calendario: Ve reunión a las 10
-├─ Genera automáticamente:
-│  ├─ Resumen último trimestre
-│  ├─ Datos clave (total, promedio, tendencias)
-│  ├─ Gráficos
-│  └─ "Puntos de atención" (anomalías)
-├─ A las 09:45: Te notifica "En 15 minutos reunión.
-│              Resumen listo: [aquí]"
-├─ Durante reunión: Sugerencias en tiempo real
-│  "Director pregunta por % rural. La respuesta es 62%."
-└─ Después: Registra decisiones, next steps
+1. Accede a tu calendario: Ve reunión a las 10
+2. Genera automáticamente:
+   - Resumen último trimestre
+   - Datos clave (total, promedio, tendencias)
+   - Gráficos
+   - "Puntos de atención" (anomalías)
+3. A las 09:45: Te notifica con resumen
+4. Durante reunión: Sugerencias en tiempo real
+5. Después: Registra decisiones
 ```
 
 ### Caso 2: Redactor de Emails y Documentos
@@ -69,17 +68,16 @@ AGENTE:
 TÚ: "Necesito responder a este email de ciudadano quejándose"
 
 AGENTE:
-├─ Lee el email del ciudadano
-├─ Consulta historial: Otros emails de esta persona
-├─ Entiende contexto: Queja anterior de hace 2 meses
-├─ Genera 3 opciones de respuesta:
-│  A) Formal y correctiva (reconocer error)
-│  B) Empática pero defensiva (explicar)
-│  C) Propositiva (solución)
-├─ TÚ eliges: "A, pero más corto"
-├─ AGENTE adapta
-├─ Resultado: Email listo, solo revisar y enviar
-└─ AHORRO: 20 minutos → 2 minutos
+1. Lee el email del ciudadano
+2. Consulta historial: Otros emails de esta persona
+3. Entiende contexto: Queja anterior de hace 2 meses
+4. Genera 3 opciones de respuesta:
+   A) Formal y correctiva (reconocer error)
+   B) Empática pero defensiva (explicar)
+   C) Propositiva (solución)
+5. TÚ eliges: "A, pero más corto"
+6. AGENTE adapta
+7. Resultado: Email listo, solo revisar
 ```
 
 ### Caso 3: Revisor de Documentos
@@ -89,18 +87,19 @@ TÚ: "Revisa este PDF de normativa actualizada.
      ¿Qué cambió vs la anterior?"
 
 AGENTE:
-├─ Lee PDF nuevo
-├─ Consulta su memoria: Normativa anterior de 3 meses atrás
-├─ Compara automáticamente
-├─ Genera report: "CAMBIOS DETECTADOS"
-│  - Artículo 5: Plazo de 10 → 15 días
-│  - Artículo 12: Eliminado criterio de edad
-│  - Nueva sección: Requisitos de accesibilidad
-├─ Impacto en tu trabajo:
-│  "Esto afecta a procedimiento de: Licencias y Subvenciones"
-├─ Sugerencias: "Actualizar plantillas en: [links]"
-└─ RESULTADO: Sabes impacto en 2 minutos (vs 30 minutos leyendo)
-```
+1. Lee PDF nuevo
+2. Consulta su memoria: Normativa anterior de 3 meses atrás
+3. Compara automáticamente
+4. Genera report: "CAMBIOS DETECTADOS"
+   - Artículo 5: Plazo de 10 → 15 días
+   - Artículo 12: Eliminado criterio de edad
+   - Nueva sección: Requisitos de accesibilidad
+5. Impacto en tu trabajo:
+   "Esto afecta a: Licencias y Subvenciones"
+
+   Sugerencias: "Actualizar plantillas en: [links]"
+
+   **RESULTADO:** Sabes impacto en 2 minutos (vs 30 minutos leyendo)
 
 ### Caso 4: Investigador de Datos
 
@@ -108,18 +107,19 @@ AGENTE:
 TÚ: "Este mes rechazamos 15% solicitudes. ¿Es normal? 
      ¿Hay patrón? ¿Debería preocuparme?"
 
-AGENTE:
-├─ Accede histórico: Últimos 12 meses
-├─ Analiza: Rechazo promedio 8%
-├─ Este mes: 15% (casi el doble)
-├─ Investiga posibles causas:
-│  - Nueva normativa aplicada (SÍ desde hace 2 semanas)
-│  - Personal diferente (NO, mismo equipo)
-│  - Criterios más estrictos (SÍ, por normativa)
-├─ Conclusión: "Aumento esperado por normativa nueva"
-├─ Proyección: "Próximo mes probablemente 12-14%"
-└─ AHORRO: Análisis que tomaría 2 horas en 5 minutos
-```
+Accede histórico: Últimos 12 meses
+Analiza: Rechazo promedio 8%
+Este mes: 15% (casi el doble)
+
+**Investiga posibles causas:**
+- Nueva normativa aplicada (SÍ desde hace 2 semanas)
+- Personal diferente (NO, mismo equipo)
+- Criterios más estrictos (SÍ, por normativa)
+
+Conclusión: "Aumento esperado por normativa nueva"
+Proyección: "Próximo mes probablemente 12-14%"
+
+**AHORRO:** Análisis que tomaría 2 horas en 5 minutos
 
 ### Caso 5: Preparador de Presentaciones
 
@@ -127,19 +127,19 @@ AGENTE:
 TÚ: "En 2 horas tengo que presentar al concejal 
      sobre gestión de este semestre"
 
-AGENTE:
-├─ Accede datos: Tus KPIs, reportes, decisiones
-├─ Genera automáticamente:
-│  ├─ Estructura de presentación
-│  ├─ Diapos con datos actualizados
-│  ├─ Gráficos visuales
-│  ├─ "Story" - narrativa coherente
-│  ├─ Notas del orador (qué decir en cada slide)
-│  └─ "Preguntas probables" (y respuestas)
-├─ TÚ personaliza (eres humano, tienes criterio)
-├─ A los 90 minutos: Presentación lista
-└─ Presentas con confianza: Todo está en las notas
-```
+Accede datos: Tus KPIs, reportes, decisiones
+
+**Genera automáticamente:**
+- Estructura de presentación
+- Diapos con datos actualizados
+- Gráficos visuales
+- "Story" - narrativa coherente
+- Notas del orador (qué decir en cada slide)
+- "Preguntas probables" (y respuestas)
+
+TÚ personaliza (eres humano, tienes criterio)
+A los 90 minutos: Presentación lista
+Presentas con confianza: Todo está en las notas
 
 ## 🏢 Diferencia: Agentes Personales vs Organizacionales
 

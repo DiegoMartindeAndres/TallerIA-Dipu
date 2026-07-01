@@ -12,101 +12,79 @@ Crear un asistente que oriente paso a paso en procedimientos administrativos com
 
 ### 1. Procedimiento de Contratación (LOPA/Ley de Contratación Pública)
 
-```
-FASE 1: SOLICITUD Y APROBACIÓN
-├─ Acta de inicio
-├─ Justificación de necesidad
-├─ Presupuesto detallado
-├─ Informe de disponibilidad presupuestaria
-└─ Resolución de aprobación (firma Alcalde)
-Plazo total: 5-10 días
-Responsable: Área solicitante + Gerencia
-
-FASE 2: LICITACIÓN Y PUBLICACIÓN
-├─ Publicación en web municipal (mínimo 10 días hábiles)
-├─ Publicación en boletín (si > 50k€)
-├─ Periodo de respuesta (mínimo 3-5 días desde publicación)
-└─ Recepción de ofertas
-Plazo total: 15-20 días
-Responsable: Oficina de Contratación
-
-FASE 3: EVALUACIÓN
-├─ Evaluación técnica (por comisión evaluadora)
-├─ Evaluación económica
-├─ Acta de evaluación
-└─ Propuesta de selección
-Plazo total: máximo 20 días hábiles
-Responsable: Comisión evaluadora
-
-FASE 4: ADJUDICACIÓN
-├─ Resolución de adjudicación (firma Alcalde)
-├─ Notificación a proveedores
-├─ Plazo de impugnación (10 días)
-└─ Confirmación de adjudicación
-Plazo total: máximo 30 días
-Responsable: Alcalde / Jurídica
-
-FASE 5: FORMALIZACIÓN
-├─ Contrato firmado
-├─ Pólizas de seguro
-└─ Actualización contable
-Plazo total: 5-10 días
-Responsable: Secretaría / Jurídica
-
-FASE 6: EJECUCIÓN
-├─ Realización del servicio/obra/suministro
-├─ Certificaciones de conformidad
-├─ Facturación
-└─ Pago
-Plazo: Variable según tipo
-Responsable: Proveedor + Área solicitante
+```mermaid
+graph TD
+    A["📋 FASE 1: SOLICITUD Y APROBACIÓN<br/>5-10 días"]
+    A --> A1["Acta de inicio"]
+    A --> A2["Justificación de necesidad"]
+    A --> A3["Presupuesto detallado"]
+    A --> A4["Informe disponibilidad presupuestaria"]
+    A --> A5["Resolución Alcalde"]
+    
+    A5 --> B["📢 FASE 2: LICITACIÓN Y PUBLICACIÓN<br/>15-20 días"]
+    B --> B1["Publicación web municipal"]
+    B --> B2["Publicación boletín si >50k€"]
+    B --> B3["Periodo respuesta 3-5 días"]
+    B --> B4["Recepción ofertas"]
+    
+    B4 --> C["✍️ FASE 3: EVALUACIÓN<br/>Máx 20 días hábiles"]
+    C --> C1["Evaluación técnica"]
+    C --> C2["Evaluación económica"]
+    C --> C3["Acta de evaluación"]
+    C --> C4["Propuesta selección"]
+    
+    C4 --> D["✅ FASE 4: ADJUDICACIÓN<br/>Máx 30 días"]
+    D --> D1["Resolución adjudicación"]
+    D --> D2["Notificación proveedores"]
+    D --> D3["Plazo impugnación 10 días"]
+    
+    D3 --> E["📄 FASE 5: FORMALIZACIÓN<br/>5-10 días"]
+    E --> E1["Contrato firmado"]
+    E --> E2["Pólizas seguro"]
+    E --> E3["Actualización contable"]
+    
+    E3 --> F["🚀 FASE 6: EJECUCIÓN"]
+    F --> F1["Realización servicio"]
+    F --> F2["Certificaciones conformidad"]
+    F --> F3["Facturación y Pago"]
 ```
 
 ### 2. Procedimiento de Subvención
 
-```
-FASE 1: PUBLICACIÓN Y SOLICITUD
-├─ Publicación bases de convocatoria
-├─ Plazo de solicitud (mínimo 15 días)
-└─ Recepción de solicitudes
-Plazo: 20-30 días
-Responsable: Servicios de Subvenciones
-
-FASE 2: ADMISIBILIDAD
-├─ Verificación de documentación
-├─ Resolución de admisibilidad
-└─ Notificación a solicitantes
-Plazo: máximo 20 días
-Responsable: Servicios de Subvenciones + Jurídica
-
-FASE 3: EVALUACIÓN
-├─ Evaluación de méritos según baremo
-├─ Acta de evaluación
-└─ Propuesta de selección
-Plazo: máximo 30 días
-Responsable: Comisión evaluadora
-
-FASE 4: RESOLUCIÓN PROVISIONAL
-├─ Publicación de borrador de resolución
-├─ Plazo de alegaciones (10 días)
-└─ Análisis de alegaciones
-Plazo: mínimo 10-15 días
-Responsable: Servicios de Subvenciones
-
-FASE 5: RESOLUCIÓN DEFINITIVA
-├─ Resolución de concesión (firma Alcalde)
-├─ Notificación a beneficiarios
-└─ Condicionalidad de efectividad
-Plazo: máximo 5 días
-Responsable: Alcalde
-
-FASE 6: JUSTIFICACIÓN Y CIERRE
-├─ Periodo de justificación (usuales: 3-6 meses)
-├─ Presentación de documentación
-├─ Auditoría y control
-└─ Resolución de liquidación
-Plazo: 6+ meses
-Responsable: Beneficiario + Servicios
+```mermaid
+graph TD
+    A["FASE 1: PUBLICACIÓN"]
+    A --> A1["Bases de convocatoria"]
+    A --> A2["Plazo: 15+ días"]
+    A --> A3["Responsable: Subvenciones"]
+    
+    B["FASE 2: ADMISIBILIDAD"]
+    B --> B1["Verificar documentación"]
+    B --> B2["Plazo: 20 días máx"]
+    B --> B3["Responsable: Jurídica"]
+    
+    C["FASE 3: EVALUACIÓN"]
+    C --> C1["Evaluar méritos"]
+    C --> C2["Plazo: 30 días máx"]
+    C --> C3["Responsable: Comisión"]
+    
+    D["FASE 4: RESOLUCIÓN PROVISIONAL"]
+    D --> D1["Alegaciones: 10 días"]
+    D --> D2["Plazo: 10-15 días"]
+    
+    E["FASE 5: RESOLUCIÓN DEFINITIVA"]
+    E --> E1["Firma Alcalde"]
+    E --> E2["Plazo: 5 días máx"]
+    
+    F["FASE 6: JUSTIFICACIÓN"]
+    F --> F1["Período: 3-6 meses"]
+    F --> F2["Auditoría y control"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
 
 ### 3. Procedimiento de Obra Pública (más estricto que contratación)

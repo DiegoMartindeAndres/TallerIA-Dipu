@@ -34,43 +34,30 @@
 
 ---
 
-## 🎫 Estructura de Asistencia
+## Estructura de Asistencia
 
-### Opción A: Taller Intensivo 3 Días (24 horas)
+### Opción A: Taller Intensivo 3 Días
 
-```
-DÍA 1 (Lunes)
-09:00 - 17:00  Bloque 1: IA Generativa (8 horas)
-  09:00 - 10:30  Conceptos Básicos + Prompting Básico Intro
-  10:30 - 10:45  CAFÉ
-  10:45 - 12:15  Prompting Básico continuado
-  12:15 - 13:15  ALMUERZO
-  13:15 - 14:45  Hablar Antes Pedir
-  14:45 - 15:00  CAFÉ
-  15:00 - 16:30  Método Karpathy + Prompting Avanzado Intro
-  16:30 - 17:00  CIERRE DÍA
-
-DÍA 2 (Martes)
-09:00 - 17:00  Bloque 2: Gemas (8 horas)
-  09:00 - 10:30  Qué son Gemas + Arquitectura
-  10:30 - 10:45  CAFÉ
-  10:45 - 12:15  Tu Primera Gema - Sistema y Contexto
-  12:15 - 13:15  ALMUERZO
-  13:15 - 14:45  Gemas Especializadas (Normativa, Contratos)
-  14:45 - 15:00  CAFÉ
-  15:00 - 16:30  Gemas Especializadas (Subvenciones, Expedientes)
-  16:30 - 17:00  CIERRE DÍA
-
-DÍA 3 (Miércoles)
-09:00 - 17:00  Bloque 3: Agentes + Proyecto Final (8 horas)
-  09:00 - 10:30  Paradigma de Agentes vs Chatbots
-  10:30 - 10:45  CAFÉ
-  10:45 - 12:15  Componentes de Agentes
-  12:15 - 13:15  ALMUERZO
-  13:15 - 14:45  Agentes Prácticos
-  14:45 - 15:00  CAFÉ
-  15:00 - 16:30  Tu Gema Personal: Presentación Proyectos
-  16:30 - 17:00  Reflexión Final + Certificados + Clausura
+```mermaid
+graph TD
+    A["🗓️ DÍA 1 - Lunes"]
+    A --> A1["09:00-10:30: Conceptos Básicos<br/>+ Prompting Básico Intro"]
+    A --> A2["10:45-12:15: Prompting Básico"]
+    A --> A3["13:15-14:45: Hablar Antes Pedir"]
+    A --> A4["15:00-16:30: Método Karpathy<br/>+ Prompting Avanzado"]
+    
+    B["🗓️ DÍA 2 - Martes"]
+    B --> B1["09:00-10:30: Qué son Gemas<br/>+ Arquitectura"]
+    B --> B2["10:45-12:15: Tu Primera Gema"]
+    B --> B3["13:15-14:45: Gemas Especializadas 1"]
+    B --> B4["15:00-16:30: Gemas Especializadas 2"]
+    
+    C["🗓️ DÍA 3 - Miércoles"]
+    C --> C1["09:00-10:30: Paradigma de Agentes"]
+    C --> C2["10:45-12:15: Componentes de Agentes"]
+    C --> C3["13:15-14:45: Agentes Prácticos"]
+    C --> C4["15:00-16:30: Proyectos Finales"]
+    C --> C5["16:30-17:00: Clausura + Certificados"]
 ```
 
 ---

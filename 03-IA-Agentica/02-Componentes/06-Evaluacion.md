@@ -73,30 +73,15 @@ Resultado esperado: Misma decisión en casos idénticos
 
 **Encuesta a ciudadanos**:
 
-```
-Antes (Proceso manual):
-┌─────────────────────┐
-│ ¿Satisfecho?        │
-│ SÍ: 60%             │
-│ NO: 40%             │
-│                     │
-│ Quejas principales: │
-│ - Demasiado lento   │
-│ - Información vaga  │
-│ - Inconsistente     │
-└─────────────────────┘
-
-Después (Con agente):
-┌─────────────────────┐
-│ ¿Satisfecho?        │
-│ SÍ: 87%             │
-│ NO: 13%             │
-│                     │
-│ Quejas principales: │
-│ - Ninguna relevante │
-│ - Algunos: "Muy     │
-│   automático"       │
-└─────────────────────┘
+```mermaid
+graph LR
+    A["ANTES<br/>Proceso Manual"] --> A1["60% Satisfecho"]
+    A --> A2["Lento"]
+    A --> A3["Info vaga"]
+    
+    B["DESPUÉS<br/>Con Agente"] --> B1["87% Satisfecho"]
+    B --> B2["Rápido"]
+    B --> B3["Info clara"]
 ```
 
 ```

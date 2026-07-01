@@ -64,18 +64,18 @@ TRAZABILIDAD: Completa (quién procesó, cuándo, qué errores)
 
 ### Paso 1: Recepción y Lectura
 
-```
-Agente detecta: Email con 50 attachments
-
-Para CADA attachment:
-├─ ¿Es documento válido? (PDF, DOC, JPG)
-├─ Si es papel (JPG/escaneo): OCR automático
-│   [Lee texto del documento]
-├─ Si es digital (PDF): Extrae texto
-│   [Lee contenido]
-├─ Si es incorrecto: Alerta "Documento corrupto"
-
-Resultado: 50 documentos leídos, texto extraído
+```mermaid
+graph TD
+    A["📧 Email con 50 attachments"]
+    A --> B["Para CADA documento"]
+    
+    B --> B1["✓ ¿Es válido? PDF/DOC/JPG"]
+    B1 --> B2["Si es papel: OCR automático"]
+    B1 --> B3["Si es digital: Extrae texto"]
+    B1 --> B4["Si es corrupto: Alerta"]
+    
+    B2 --> C["✓ 50 documentos leídos<br/>Texto extraído"]
+    B3 --> C
 ```
 
 ### Paso 2: Clasificación Inteligente

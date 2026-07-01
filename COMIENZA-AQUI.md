@@ -34,26 +34,14 @@ Este documento es tu punto de entrada. Lee esto primero (5 minutos) y luego sigu
 
 El taller está dividido en **3 bloques + Materiales de Soporte:**
 
-```
-┌─────────────────────────────────────────────────────────┐
-│         Bloque 1: IA Generativa Aplicada               │
-│         (Aprende los fundamentos + prompting)           │
-│         Duración: 6-8 horas                             │
-└─────────────┬───────────────────────────────────────────┘
-              │
-              ▼
-┌─────────────────────────────────────────────────────────┐
-│    Bloque 2: Gemas (Asistentes Especializados)         │
-│    (Crea Gemas para tu área de trabajo)                 │
-│    Duración: 8-10 horas                                 │
-└─────────────┬───────────────────────────────────────────┘
-              │
-              ▼
-┌─────────────────────────────────────────────────────────┐
-│      Bloque 3: IA Agéntica (Agentes Autónomos)         │
-│      (Automatiza procesos completos)                    │
-│      Duración: 8-10 horas                               │
-└─────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    A["📖 Bloque 1: IA Generativa Aplicada<br/>Aprende los fundamentos + prompting<br/>Duración: 6-8 horas"]
+    B["✨ Bloque 2: Gemas Asistentes Especializados<br/>Crea Gemas para tu área de trabajo<br/>Duración: 8-10 horas"]
+    C["🦾 Bloque 3: IA Agéntica Agentes Autónomos<br/>Automatiza procesos completos<br/>Duración: 8-10 horas"]
+    
+    A --> B
+    B --> C
 ```
 
 ---

@@ -23,24 +23,10 @@ Un agente no es solo un chatbot más inteligente. Es un asistente que entiende u
 
 Hemos visto esta progresión en el taller:
 
-```
-┌─────────────────┐
-│    CHATBOT      │
-│   (Reactivo)    │
-│   Solo responde │
-└────────┬────────┘
-         ↓
-┌─────────────────┐
-│     GEMA        │
-│  (Inteligente)  │
-│  Responde bien  │
-└────────┬────────┘
-         ↓
-┌─────────────────┐
-│     AGENTE      │
-│  (Autónomo)     │
-│  Decide y actúa │
-└────────┬────────┘
+```mermaid
+graph TD
+    A["🤖 Chatbot<br/>(Reactivo)<br/>Solo responde"] --> B["✨ Gema<br/>(Inteligente)<br/>Responde bien"]
+    B --> C["🦾 Agente<br/>(Autónomo)<br/>Decide y actúa"]
 ```
 
 - **Chatbot**: "¿Cuál es la capital de España?" → Responde "Madrid"

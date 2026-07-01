@@ -25,18 +25,27 @@ Hermes es la respuesta.
 
 ### Filosofía
 
-```
-CREENCIA DE HERMES:
-"Si los agentes van a gobernar procesos críticos,
- necesitan ser seguros, audibles, y escalables.
- No solo convenientes."
-
-IMPLICACIÓN:
-├─ Seguridad: Cifrado, control de acceso, auditoría
-├─ Transparencia: Cada decisión es trazable
-├─ Escalabilidad: De 1 departamento a 500
-├─ Flexibilidad: Personalización completa (con código)
-└─ Responsabilidad: Humano siempre en control
+```mermaid
+graph TD
+    A["💡 FILOSOFÍA HERMES"]
+    A --> A1["Agentes deben ser<br/>seguros, audibles,<br/>escalables"]
+    
+    B["🔐 Seguridad"]
+    B --> B1["Cifrado"]
+    B --> B2["Control de acceso"]
+    B --> B3["Auditoría"]
+    
+    C["📊 Responsabilidad"]
+    C --> C1["Cada decisión trazable"]
+    C --> C2["Humano siempre control"]
+    
+    D["📈 Escalabilidad"]
+    D --> D1["De 1 depto a 500+"]
+    D --> D2["Personalización total"]
+    
+    A --> B
+    A --> C
+    A --> D
 ```
 
 ## 🆚 Comparación: OpenClaw vs Hermes

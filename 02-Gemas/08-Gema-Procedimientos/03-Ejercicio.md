@@ -47,13 +47,19 @@ Mi respuesta: _________________________________
 ```
 
 ### Pregunta 2: Plan de fases
+
 Planifica las fases del procedimiento con plazos:
 
-```
-Fase 1: _________________ (Plazo: ___ días) - Responsable: ___________
-Fase 2: _________________ (Plazo: ___ días) - Responsable: ___________
-Fase 3: _________________ (Plazo: ___ días) - Responsable: ___________
-...
+```mermaid
+graph TD
+    A["FASE 1: Acta iniciación<br/>(Plazo: ___ días)"]
+    A --> A1["Responsable: ___________"]
+    
+    B["FASE 2: Presupuesto<br/>(Plazo: ___ días)"]
+    B --> B1["Responsable: ___________"]
+    
+    C["FASE 3: Resolución<br/>(Plazo: ___ días)"]
+    C --> C1["Responsable: ___________"]
 ```
 
 ### Pregunta 3: Plazo total
@@ -97,27 +103,28 @@ ANTES que nada:
 
 ### RESPUESTA 2: Plan de fases con plazos
 
+```mermaid
+graph TD
+    A["📋 FASE 1: APROBACIÓN INICIAL<br/>5-10 días"]
+    A --> A1["Acta iniciación: 2 días"]
+    A --> A2["Presupuesto: 1 día"]
+    A --> A3["Disponibilidad: 1 día"]
+    A --> A4["Resolución Alcalde: 1 día"]
+    
+    B["📢 FASE 2: PUBLICACIÓN<br/>15 días mínimo"]
+    A4 --> B
+    B --> B1["Publicación web: 10 días"]
+    B --> B2["Publicación boletín"]
+    B --> B3["Cierre ofertas: 5 días"]
+    
+    C["✍️ FASE 3: EVALUACIÓN<br/>20 días máximo"]
+    B3 --> C
+    C --> C1["Evaluación técnica"]
+    C --> C2["Evaluación económica"]
+    
+    D["✅ FECHA ESTIMADA: 25 de Marzo<br/>TOTAL: 50-55 días"]
+    C2 --> D
 ```
-FASE 1: APROBACIÓN INICIAL (5-10 días)
-├─ Acta de iniciación: Jefa Informática redacta (2 días)
-├─ Presupuesto: Gerencia valida (1 día)
-├─ Disponibilidad: Tesorería confirma (1 día)
-├─ Resolución de aprobación: Alcalde firma (1 día)
-└─ Registrar: Secretaría formaliza
-Responsable: Jefa Informática + Gerencia
-Plazo total: 5-10 días máximo
-
-FECHA ESTIMADA: Si empezamos hoy (15/03), listo para 25/03
-
----
-
-FASE 2: PUBLICACIÓN (15 días mínimo)
-├─ Publicación web municipal: 10 días hábiles (obligatorio)
-├─ Publicación boletín: Simultáneo (si > 50k€)
-├─ Periodo de respuesta: 5 días mínimo desde publicación
-└─ Esperar cierre de ofertas
-Responsable: Oficina de Contratación
-Plazo total: 15-18 días
 
 FECHA ESTIMADA: Publicar 26/03, cerrar 10/04
 

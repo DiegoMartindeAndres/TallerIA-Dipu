@@ -24,23 +24,16 @@ y ver qué tiene en su interior.
 
 Una Gema tiene 3 capas principales:
 
-```
-┌─────────────────────────────────────────┐
-│ CAPA 1: SISTEMA (Instrucciones Base)    │
-│ "Quién eres" - Rol y comportamiento     │
-└─────────────────────────────────────────┘
-                    ↓
-┌─────────────────────────────────────────┐
-│ CAPA 2: CONTEXTO (Base de Conocimiento) │
-│ "Qué sabes" - Normativas, ejemplos      │
-└─────────────────────────────────────────┘
-                    ↓
-┌─────────────────────────────────────────┐
-│ CAPA 3: USUARIO (Interacción)           │
-│ "Qué necesito" - La pregunta del usuario │
-└─────────────────────────────────────────┘
-                    ↓
-             RESPUESTA ESPECIALIZADA
+```mermaid
+graph TD
+    A["📋 CAPA 1: SISTEMA<br/>—————<br/>Quién eres?<br/>Rol y comportamiento"]
+    B["📚 CAPA 2: CONTEXTO<br/>—————<br/>Qué sabes?<br/>Normativas, ejemplos"]
+    C["💬 CAPA 3: USUARIO<br/>—————<br/>Qué necesito?<br/>Tu pregunta"]
+    D["✨ RESPUESTA ESPECIALIZADA"]
+    
+    A --> B
+    B --> C
+    C --> D
 ```
 
 ---

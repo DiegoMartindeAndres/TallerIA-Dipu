@@ -67,15 +67,16 @@ Definiciones:
 ```
 
 ### 2.3 Datos, clasificaciones o tablas importantes
-```
-Categoría A: ________________________
-Categoría B: ________________________
-Categoría C: ________________________
 
-Tabla 1: [Qué datos clave debe tener]
-┌────┬────┬────┐
-│    │    │    │
-└────┴────┴────┘
+```mermaid
+graph TD
+    A["📊 DATOS IMPORTANTES"]
+    A --> B["Categoría A: ______"]
+    A --> C["Categoría B: ______"]
+    A --> D["Categoría C: ______"]
+    
+    E["📋 TABLA CLAVE"]
+    E --> E1["Datos necesarios"]
 ```
 
 ### 2.4 Plazos, límites o restricciones normativas

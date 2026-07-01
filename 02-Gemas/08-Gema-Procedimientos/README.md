@@ -71,12 +71,13 @@ Es la más **procesual y secuencial**. No es solo validación, es **orientación
 
 ## Estructura de la Gema
 
-```
-📁 08-Gema-Procedimientos/
-├── README.md (este archivo)
-├── 01-Diseno.md (Diseño del asistente)
-├── 02-Prompts-Ejemplo.md (Prompts prácticos)
-└── 03-Ejercicio.md (Caso: Contratación paso a paso)
+```mermaid
+graph TD
+    A["📁 08-Gema-Procedimientos"]
+    A --> A1["README.md<br/>(este archivo)"]
+    A --> A2["01-Diseno.md<br/>(Diseño del asistente)"]
+    A --> A3["02-Prompts-Ejemplo.md<br/>(Prompts prácticos)"]
+    A --> A4["03-Ejercicio.md<br/>(Caso: Contratación)"]
 ```
 
 ### En cada sección

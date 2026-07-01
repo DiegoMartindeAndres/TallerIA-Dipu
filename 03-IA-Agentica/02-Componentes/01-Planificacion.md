@@ -90,61 +90,52 @@ Veamos cómo un agente planifica procesar UNA solicitud:
 
 ### El Agente Planifica Automáticamente
 
-```
-PLAN DETALLADO:
-
-RECIBIR
-├─ Leer solicitud completa
-├─ Extraer información (DNI, nombre, fecha, monto)
-└─ Validar formato (es un PDF válido?)
-
-IDENTIFICAR
-├─ ¿Qué tipo de subvención? (vivienda → aplicar normativa X)
-├─ ¿Solicitante es elegible? (edad, residencia)
-└─ ¿Necesita documentación especial?
-
-VALIDAR DOCUMENTACIÓN
-├─ Comprobar: certificado empadronamiento
-├─ Comprobar: nómina última
-├─ Comprobar: certificación bancaria
-├─ Comprobar: documento identidad
-└─ Si falta algo → PAUSA, solicita al ciudadano
-
-CONSULTAR NORMATIVA
-├─ Subvenciones vivienda 2024 (leer PDF/BD)
-├─ Criterios de elegibilidad (interpretar)
-├─ Tope máximo de ingresos (200% SMI)
-└─ Condiciones especiales (primera vivienda, jóvenes)
-
-EVALUAR ELEGIBILIDAD
-├─ Ingresos <= tope? SI → continúa
-├─ Primera vivienda? SI → bonus puntos
-├─ Edad (25-45 años)? SI → elegible
-└─ ¿Hay conflictos? Comprobar con ASNEF/policía
-
-CALCULAR PUNTUACIÓN
-├─ Puntos base: 10
-├─ Ingresos bajos: +20 puntos
-├─ Joven: +10 puntos
-├─ Urgencia (situación): +15 puntos
-├─ Total: 55 puntos
-└─ Rango: Buena (41-60 puntos)
-
-GENERAR RESOLUCIÓN
-├─ Aplicar plantilla de resolución
-├─ Insertar datos de solicitante
-├─ Insertar monto (sugerido según puntuación)
-├─ Insertar condiciones
-├─ Generar documento PDF
-└─ Firmar digitalmente
-
-NOTIFICAR
-├─ Enviar resolución a Juan
-├─ Copiar a archivo
-├─ Actualizar BD (solicitud ahora PROCESADA)
-└─ Registrar en log (quién revisó, cuándo, resultado)
-
-FIN
+```mermaid
+graph TD
+    A["📋 RECIBIR"] --> A1["📄 Leer solicitud"]
+    A --> A2["📊 Extraer datos: DNI, nombre, fecha, monto"]
+    A --> A3["✓ Validar formato PDF"]
+    
+    A3 --> B["🔍 IDENTIFICAR"]
+    B --> B1["🏷️ Tipo subvención: vivienda"]
+    B --> B2["👤 Elegibilidad: edad, residencia"]
+    B --> B3["📋 Documentación especial?"]
+    
+    B3 --> C["✅ VALIDAR DOCUMENTACIÓN"]
+    C --> C1["🏠 Empadronamiento"]
+    C --> C2["💰 Nómina"]
+    C --> C3["🏦 Certificación bancaria"]
+    C --> C4["🆔 Documento identidad"]
+    
+    C4 --> D["📖 CONSULTAR NORMATIVA"]
+    D --> D1["2024 Vivienda - PDF/BD"]
+    D --> D2["Criterios elegibilidad"]
+    D --> D3["Tope ingresos 200% SMI"]
+    
+    D3 --> E["⚖️ EVALUAR ELEGIBILIDAD"]
+    E --> E1["💵 Ingresos <= tope?"]
+    E --> E2["🏠 Primera vivienda?"]
+    E --> E3["👶 Edad 25-45?"]
+    
+    E3 --> F["🎯 CALCULAR PUNTUACIÓN"]
+    F --> F1["Base: 10 puntos"]
+    F --> F2["Ingresos bajos: +20"]
+    F --> F3["Joven: +10"]
+    F --> F4["Urgencia: +15"]
+    F --> F5["TOTAL: 55 puntos"]
+    
+    F5 --> G["📄 GENERAR RESOLUCIÓN"]
+    G --> G1["Plantilla resolución"]
+    G --> G2["Datos solicitante"]
+    G --> G3["PDF digital"]
+    
+    G3 --> H["📧 NOTIFICAR"]
+    H --> H1["Enviar a Juan"]
+    H --> H2["Archivar"]
+    H --> H3["Actualizar BD"]
+    H --> H4["Registrar log"]
+    
+    H4 --> I["✨ FIN"]
 ```
 
 ### Lo Importante

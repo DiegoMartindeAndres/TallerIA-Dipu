@@ -21,13 +21,15 @@ Cuando tu ciudad recibe 50 emails/día, tener un resumen de cada uno ahorra tiem
 ```
 
 ### Conecta tu email
-```
-CONFIGURACIÓN:
-┌─ Tipo: Email
-├─ Protocolo: IMAP o API Gmail
-├─ Email: tu.email@ayuntamiento.es
-├─ Contraseña: [aplicación contraseña, no personal]
-└─ Cartera: Todos los emails
+
+```mermaid
+graph TD
+    A["⚙️ CONFIGURACIÓN EMAIL"]
+    A --> A1["Tipo: Email"]
+    A --> A2["Protocolo: IMAP/Gmail API"]
+    A --> A3["Email: tu.email@ayuntamiento.es"]
+    A --> A4["Contraseña: aplicación"]
+    A --> A5["Cartera: Todos los emails"]
 ```
 
 ## 📝 Paso 2: Define el Agente (5 minutos)
@@ -48,24 +50,28 @@ OBJETIVO PRINCIPAL:
 ```
 
 ### Personalidad y Tono
-```
-SELECCIONA:
-├─ Formalidad: Profesional
-├─ Tono: Empático pero eficiente
-├─ Idioma: Español de España
-└─ Estilo: Resumen ejecutivo
+
+```mermaid
+graph TD
+    A["🎭 CONFIGURAR PERSONALIDAD"]
+    A --> A1["Formalidad: Profesional"]
+    A --> A2["Tono: Empático + eficiente"]
+    A --> A3["Idioma: Español España"]
+    A --> A4["Estilo: Resumen ejecutivo"]
 ```
 
 ## 🎛️ Paso 3: Configura Capacidades (15 minutos)
 
 ### Capacidad 1: Lectura de Emails
-```
-CONEXIÓN:
-┌─ Fuente: Tu bandeja de entrada
-├─ Carpeta: [Inbox]
-├─ Filtro: Remitente = ciudadano@*.es
-├─ Frecuencia: Cada hora
-└─ Acción: Procesar nuevos
+
+```mermaid
+graph TD
+    A["📧 CONEXIÓN EMAIL"]
+    A --> A1["Fuente: Bandeja de entrada"]
+    A --> A2["Carpeta: Inbox"]
+    A --> A3["Filtro: ciudadano@*.es"]
+    A --> A4["Frecuencia: Cada hora"]
+    A --> A5["Acción: Procesar nuevos"]
 ```
 
 ### Capacidad 4: Lógica de Procesamiento

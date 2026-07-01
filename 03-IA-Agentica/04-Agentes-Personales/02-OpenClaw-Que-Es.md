@@ -22,51 +22,47 @@ Es para administradores, coordinadores, gente que sabe QUÉ quiere pero no cómo
 
 ```
 ANTES (2020):
-├─ Crear un agente = Contratar programador
-├─ Costo: €10.000-50.000
-├─ Tiempo: 3-6 meses
+- Crear agente = Contratar programador
+- Costo: €10.000-50.000
+- Tiempo: 3-6 meses
 
 HOY (2024):
-├─ OpenClaw: Crear agente = 2 horas
-├─ Costo: €50-300/mes (SaaS)
-├─ Resultado: Mismo agente, democracia de la IA
+- OpenClaw: 2 horas
+- Costo: €50-300/mes (SaaS)
+- Resultado: Democracia de la IA
 ```
-
-OpenClaw surge porque: "¿Por qué necesitas programador si puedes usar AI para crear AI?"
 
 ### Filosofía
 
-```
-CREENCIA DE OPENCLAW:
-"El conocimiento está en las personas que trabajan.
- No en los programadores.
- Queremos que las personas creen sus propios agentes."
-
-IMPLICACIÓN:
-├─ Tú (sin programación) puedes crear
-├─ Interfaz visual y conversacional
-├─ El sistema genera la lógica internamente
-└─ Resultado: Empoderamiento de usuarios
+```mermaid
+graph TD
+    A["💡 FILOSOFÍA OPENCLAW"]
+    A --> A1["El conocimiento está en<br/>las personas que trabajan"]
+    A --> A2["No en los programadores"]
+    A --> A3["Queremos empoderamiento"]
+    
+    B["👤 Tú SIN programación"]
+    B --> B1["Interfaz visual"]
+    B --> B2["Conversacional"]
+    B --> B3["Sistema genera lógica"]
+    B --> B4["RESULTADO: Empoderamiento"]
+    
+    A --> B
 ```
 
 ## 🆚 Comparación: OpenClaw vs Otros
 
 ### vs ChatGPT
 
-```
-ChatGPT:
-├─ Capacidad: Respondedor general
-├─ Contexto: Ninguno (cada sesión es nueva)
-├─ Persistencia: No hay
-├─ Integración: Chat solamente
-└─ Para: Preguntas y respuestas generales
-
-OpenClaw:
-├─ Capacidad: Agente especializado EN TI
-├─ Contexto: Completo y persistente
-├─ Persistencia: Recuerda 12 meses de interacciones
-├─ Integración: APIs, BDs, archivos, workflow
-└─ Para: Automatizar trabajo específico
+```mermaid
+graph LR
+    A["ChatGPT"] --> A1["General"]
+    A --> A2["Sin contexto"]
+    A --> A3["Chat solamente"]
+    
+    B["OpenClaw"] --> B1["Especializado EN TI"]
+    B --> B2["Contexto persistente"]
+    B --> B3["APIs + BD + Workflow"]
 ```
 
 ### vs Claude API / GPT API

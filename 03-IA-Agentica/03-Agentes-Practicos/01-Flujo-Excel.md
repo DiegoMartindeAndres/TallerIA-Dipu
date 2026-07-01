@@ -67,14 +67,17 @@ Resultado:
 ```
 
 ### Paso 2: Validación y Extracción
-```
-Para CADA solicitud:
-├─ ¿Documentación completa? SÍ/NO
-├─ ¿Solicitante existe? SÍ/NO
-├─ ¿Hay conflictos? SÍ/NO
-└─ Extrae: Datos clave en tabla
 
-Resultado: Tabla con 7 filas
+```mermaid
+graph TD
+    A["📋 PARA CADA SOLICITUD"]
+    A --> B["✅ Documentación completa?"]
+    A --> C["👤 Solicitante existe?"]
+    A --> D["⚠️ ¿Hay conflictos?"]
+    B --> E["📊 Extrae: Datos clave en tabla"]
+    C --> E
+    D --> E
+    E --> F["✓ Tabla con 7 filas"]
 ```
 
 ### Paso 3: Cálculo de Puntuación
@@ -100,24 +103,25 @@ ESTO SE REPITE PARA LAS 7 SOLICITUDES
 ```
 
 ### Paso 4: Generación de Excel
-```
-Agente: "Crearé Excel con resultados"
 
-COLUMNAS:
-├─ Nombre
-├─ Monto solicitado
-├─ Puntuación
-├─ Categoría (Buena/Media/Baja)
-├─ Recomendación (Aprobar/Evaluar/Rechazar)
-└─ Estado
-
-FILAS (ejemplo):
-Ana García      €1.500    45    Buena    Aprobar     OK
-Juan Pérez      €2.000    32    Media    Evaluar     OK
-Rosa López      €800      52    Excelente Aprobar    OK
-...
-
-TOTAL: 7 solicitudes clasificadas
+```mermaid
+graph TD
+    A["📊 CREAR EXCEL CON RESULTADOS"]
+    
+    A --> B["COLUMNAS"]
+    B --> B1["Nombre"]
+    B --> B2["Monto solicitado"]
+    B --> B3["Puntuación"]
+    B --> B4["Categoría"]
+    B --> B5["Recomendación"]
+    B --> B6["Estado"]
+    
+    A --> C["FILAS"]
+    C --> C1["Ana García | €1.500 | 45 | Buena | Aprobar | OK"]
+    C --> C2["Juan Pérez | €2.000 | 32 | Media | Evaluar | OK"]
+    C --> C3["Rosa López | €800 | 52 | Excelente | Aprobar | OK"]
+    
+    A --> D["✓ 7 solicitudes clasificadas"]
 ```
 
 ### Paso 5: Gráficos Automáticos

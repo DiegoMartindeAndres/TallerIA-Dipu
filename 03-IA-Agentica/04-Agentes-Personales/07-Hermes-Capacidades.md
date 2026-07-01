@@ -17,17 +17,19 @@ La diferencia está en la orquestación.
 Hermes te permite programar agentes completamente personalizados usando Python o Node.js.
 
 ### Cómo funciona
-```
-CON HERMES:
-┌─ Defines estructura del agente
-├─ Defines qué herramientas tiene
-├─ Defines cómo interactúa con otros
-├─ Escribes lógica (si necesitas)
-└─ Despliega en producción
 
-RESULTADO:
-Agente completamente tuyo, específico
-para tu caso de uso exacto.
+```mermaid
+graph TD
+    A["⚙️ CON HERMES"]
+    A --> A1["Defines estructura"]
+    A --> A2["Defines herramientas"]
+    A --> A3["Defines interacciones"]
+    A --> A4["Escribes lógica"]
+    A --> A5["Despliegas"]
+    
+    B["✅ RESULTADO"]
+    B --> B1["Agente especializado"]
+    B --> B2["Caso de uso exacto"]
 ```
 
 ### Caso de Uso
@@ -52,25 +54,30 @@ OpenClaw no tanto.
 Hermes puede guardar y usar memoria de agentes de forma centralizada.
 
 ### Cómo funciona
-```
-HERMES MEMORIA:
 
-BD CENTRAL:
-├─ Interacciones: "Ciudadano X fue frustrado el mes pasado"
-├─ Patrones: "Denuncias tipo Y frecuentes en zona Z"
-├─ Éxitos: "Esta respuesta funcionó bien"
-├─ Fallos: "Este criterio falla cuando..."
-
-ACCESO:
-Cualquier agente puede:
-├─ Leer memoria compartida
-├─ Actualizar con nuevo conocimiento
-├─ Aprender de errores de otros agentes
-└─ Mejorar colectivamente
-
-RESULTADO:
-Agentes que mejoran con el tiempo,
-aprendiendo uno del otro.
+```mermaid
+graph TD
+    A["🧠 HERMES MEMORIA"]
+    
+    B["BD CENTRAL"]
+    B --> B1["Interacciones anteriores"]
+    B --> B2["Patrones identificados"]
+    B --> B3["Éxitos registrados"]
+    B --> B4["Fallos documentados"]
+    
+    C["🔄 ACCESO"]
+    C --> C1["Leer memoria compartida"]
+    C --> C2["Actualizar conocimiento"]
+    C --> C3["Aprender de otros agentes"]
+    C --> C4["Mejorar colectivamente"]
+    
+    D["✅ RESULTADO"]
+    D --> D1["Agentes mejoran con tiempo"]
+    D --> D2["Aprendizaje mutuo"]
+    
+    A --> B
+    A --> C
+    C --> D
 ```
 
 ### Caso de Uso

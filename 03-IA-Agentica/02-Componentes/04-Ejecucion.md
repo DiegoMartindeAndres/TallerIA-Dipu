@@ -111,27 +111,28 @@ MANEJO DE ERROR:
 
 Un agente debe tener límites para no quedarse congelado:
 
-```
-TIMEOUT DE OPERACIÓN:
-
-Cada paso tiene máximo 30 segundos para completarse
-├─ Si herramienta no responde en 30s: TIMEOUT
-├─ Reintentar 2 veces (30s cada una)
-├─ Si sigue fallando: Usar alternativa o escalar
-
-TIMEOUT TOTAL:
-
-Procesar una solicitud: máximo 5 minutos
-├─ Si algo toma mucho: Pausar
-├─ Documentar problema
-├─ Reanudar después (puede ser 1 hora o 1 día después)
-
-CONCURRENCIA:
-
-Mientras el agente espera por BD:
-├─ Puede procesar OTRA solicitud simultáneamente
-├─ 100 solicitudes en paralelo, cada una en su ciclo
-├─ No se bloquea, trabaja de forma "asincrónica"
+```mermaid
+graph TD
+    A["⏱️ LÍMITES DEL AGENTE"]
+    
+    B["TIMEOUT OPERACIÓN"]
+    B --> B1["Máximo 30s por paso"]
+    B --> B2["Reintentar 2 veces"]
+    B --> B3["Si falla: Usar alternativa"]
+    
+    C["TIMEOUT TOTAL"]
+    C --> C1["5 minutos por solicitud"]
+    C --> C2["Si toma más: Pausar"]
+    C --> C3["Reanudar después"]
+    
+    D["CONCURRENCIA"]
+    D --> D1["Procesa 100 solicitudes"]
+    D --> D2["Cada una en paralelo"]
+    D --> D3["Asincrónica, no bloqueante"]
+    
+    A --> B
+    A --> C
+    A --> D
 ```
 
 ## 📚 Ejemplo Paso a Paso: Procesando una Solicitud Completa

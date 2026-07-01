@@ -17,47 +17,41 @@ Estos casos existen. Están en uso en municipios españoles hoy.
 - Necesidad: Unificar procesos, mejorar velocidad
 
 ### La Solución con Hermes
-```
-ARQUITECTURA:
 
-NIVEL ENTRADA (8 agentes - uno por canal)
-├─ Agente Email (procesa 400/día)
-├─ Agente Web (formularios: 300/día)
-├─ Agente Teléfono (transcripción: 100/día)
-├─ Agente Presencial (scanner de solicitudes: 200/día)
-└─ Comunican todo a AGENTE ROUTER
-
-AGENTE ROUTER CENTRAL
-├─ Clasifica por departamento
-├─ Distribuye a agente especializado
-└─ Monitorea flujo
-
-NIVEL DEPARTAMENTOS (8 agentes especializados)
-├─ Agente Subvenciones
-├─ Agente Licencias
-├─ Agente Denuncias
-├─ ... (5 más)
-└─ Cada uno procesa su especialidad
-
-NIVEL SOPORTE (4 agentes)
-├─ Agente Normativo (consulta leyes)
-├─ Agente Validación (verifica documentos)
-├─ Agente BD (acceso centralizado)
-└─ Agente Escalar (decide quién revisa)
-
-NIVEL REPORTERÍA (1 agente)
-├─ Recopila datos de todos
-├─ Genera análisis
-└─ Reportes diarios a director
-
-TOTAL: 21 agentes coordinados
-
-RESULTADO:
-- Trámites/mes: 1.000 → 2.500 (2,5x)
-- Tiempo promedio: 7 días → 2 días
-- Satisfacción: 65% → 88%
-- Error rate: 8% → 0,5%
-- Administrativos: Dedican 50% a valor, 50% a supervisión (vs 20% valor antes)
+```mermaid
+graph TD
+    A["🏛️ ARQUITECTURA HERMES"]
+    
+    B["ENTRADA: 8 agentes por canal"]
+    B --> B1["Email: 400/día"]
+    B --> B2["Web: 300/día"]
+    B --> B3["Teléfono: 100/día"]
+    B --> B4["Presencial: 200/día"]
+    
+    C["ROUTER CENTRAL"]
+    C --> C1["Clasifica"]
+    C --> C2["Distribuye"]
+    C --> C3["Monitorea"]
+    
+    D["DEPARTAMENTOS: 8 agentes"]
+    D --> D1["Subvenciones"]
+    D --> D2["Licencias"]
+    D --> D3["Denuncias"]
+    
+    E["SOPORTE: 4 agentes"]
+    E --> E1["Normativo"]
+    E --> E2["Validación"]
+    E --> E3["BD Central"]
+    
+    F["REPORTERÍA"]
+    F --> F1["Dashboard"]
+    F --> F2["Análisis"]
+    F --> F3["KPIs"]
+    
+    B --> C
+    C --> D
+    C --> E
+    D --> F
 ```
 
 ## 🤝 Caso 2: Agentes que Colaboran Entre Departamentos

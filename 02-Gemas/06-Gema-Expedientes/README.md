@@ -75,12 +75,13 @@ Verifica si un incumplimiento tiene justificación legal.
 
 ## Estructura de la Gema
 
-```
-📁 06-Gema-Expedientes/
-├── README.md (este archivo)
-├── 01-Diseno.md (Cómo diseñar tu Gema para expedientes)
-├── 02-Prompts-Ejemplo.md (Prompts listos para usar)
-└── 03-Ejercicio.md (Caso práctico completo)
+```mermaid
+graph TD
+    A["📁 06-Gema-Expedientes"]
+    A --> A1["README.md<br/>(este archivo)"]
+    A --> A2["01-Diseno.md<br/>(Cómo diseñar tu Gema)"]
+    A --> A3["02-Prompts-Ejemplo.md<br/>(Prompts listos)"]
+    A --> A4["03-Ejercicio.md<br/>(Caso práctico)"]
 ```
 
 ### Qué encontrarás en cada sección

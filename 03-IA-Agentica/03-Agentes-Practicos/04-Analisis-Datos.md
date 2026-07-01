@@ -65,19 +65,29 @@ RESULTADO: Director recibe reporte cada mañana
 
 ### Paso 1: Recopilación de Datos
 
+```mermaid
+graph TD
+    A["🗄️ AGENTE CONECTA A"]
+    
+    B["DB 1: SOLICITUDES"]
+    B --> B1["Nuevas solicitudes hoy"]
+    B --> B2["En proceso"]
+    B --> B3["Finalizadas"]
+    B --> B4["TOTAL: 47"]
+    
+    C["DB 2: RESOLUCIONES"]
+    C --> C1["Aprobadas"]
+    C --> C2["Rechazadas"]
+    C --> C3["Pendientes"]
+    
+    D["DB 3: PAGOS"]
+    D --> D1["Pagados"]
+    D --> D2["Pendientes"]
+    
+    A --> B
+    A --> C
+    A --> D
 ```
-AGENTE CONECTA A:
-
-Base de Datos 1: SOLICITUDES
-├─ Nuevas solicitudes recibidas hoy
-├─ Solicitudes en proceso
-├─ Solicitudes finalizadas
-└─ Resultado: 47 solicitudes
-
-Base de Datos 2: RESOLUCIONES
-├─ Resoluciones aprobadas
-├─ Resoluciones rechazadas
-├─ Resoluciones pendientes
 └─ Resultado: 23 resoluciones
 
 Base de Datos 3: PAGOS

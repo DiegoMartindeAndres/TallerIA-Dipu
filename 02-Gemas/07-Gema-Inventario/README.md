@@ -70,12 +70,13 @@ Dashboard de inventario con alertas.
 
 ## Estructura de la Gema
 
-```
-📁 07-Gema-Inventario/
-├── README.md (este archivo)
-├── 01-Diseno.md (Diseño del asistente de inventario)
-├── 02-Prompts-Ejemplo.md (Prompts prácticos)
-└── 03-Ejercicio.md (Caso práctico: alertas de mantenimiento)
+```mermaid
+graph TD
+    A["📁 07-Gema-Inventario"]
+    A --> A1["README.md<br/>(este archivo)"]
+    A --> A2["01-Diseno.md<br/>(Diseño del asistente)"]
+    A --> A3["02-Prompts-Ejemplo.md<br/>(Prompts prácticos)"]
+    A --> A4["03-Ejercicio.md<br/>(Caso: alertas)"]
 ```
 
 ### Qué encontrarás en cada sección

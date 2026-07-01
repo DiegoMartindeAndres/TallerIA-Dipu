@@ -157,6 +157,7 @@ Usa la IA para aprender sobre IA. Es el mejor profesor.
 Cada archivo Markdown sigue este esquema:
 
 ```
+
 📌 Objetivo (breve introducción)
 
 ## 📚 Qué vamos a aprender
@@ -166,9 +167,7 @@ Cada archivo Markdown sigue este esquema:
    - Paso a paso
 
 ## 💬 Prompt explicado
-   ```text
-   (código del prompt aquí)
-   ```
+   
 
 ## 🔄 Variantes
    - Modificaciones
@@ -186,6 +185,7 @@ Cada archivo Markdown sigue este esquema:
 
 ## ✅ Qué hemos aprendido
    - Resumen
+
 ```
 
 ---

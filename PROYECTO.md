@@ -22,72 +22,37 @@
 
 ## 📂 Estructura de Directorios
 
+```mermaid
+graph TD
+    A["📁 TallerIA-Dipu"]
+    
+    A --> F0["README.md ✅"]
+    A --> F1["SETUP.md ✅"]
+    A --> F2["PROYECTO.md ✅"]
+    A --> F3[".gitignore ✅"]
+    
+    A --> B1["00-Preparacion/"]
+    B1 --> B1a["README.md ✅"]
+    B1 --> B1b["datos/ ✅"]
+    
+    A --> B2["01-IA-Generativa/"]
+    B2 --> B2a["README.md ✅"]
+    B2 --> B2b["01-Conceptos-Basicos/"]
+    B2 --> B2c["02-Prompting-Basico/"]
+    B2 --> B2d["03-Hablar-Antes-Pedir/"]
+    B2 --> B2e["04-Metodo-Karpathy/"]
+    B2 --> B2f["05-Prompting-Avanzado/"]
+    
+    A --> B3["02-Gemas/"]
+    B3 --> B3a["README.md ✅"]
+    B3 --> B3b["01-Que-Son-Gemas/"]
+    B3 --> B3c["02-Tu-Primera-Gema/"]
+    
+    A --> B4["03-IA-Agentica/"]
+    B4 --> B4a["README.md ✅"]
+    B4 --> B4b["01-Paradigma-Agentes/"]
+    B4 --> B4c["02-Componentes/"]
 ```
-TallerIA-Dipu/
-├── 📄 README.md                      ✅ Creado
-├── 📄 SETUP.md                       ✅ Creado
-├── 📄 PROYECTO.md                    ✅ Este archivo
-├── 📄 .gitignore                     ✅ Creado
-│
-├── 📁 00-Preparacion/
-│  ├── 📄 README.md                   ✅ Creado
-│  └── 📁 datos/                      ✅ Lista
-│
-├── 📁 01-IA-Generativa/              ⚙️ En Desarrollo
-│  ├── 📄 README.md                   ✅ Creado
-│  ├── 01-Conceptos-Basicos/
-│  │  ├── 01-Que-es-IA.md            ✅ Creado
-│  │  ├── 02-Como-Funciona.md        ✅ Creado
-│  │  ├── 03-Limitaciones.md         ✅ Creado
-│  │  └── 04-Alucinaciones.md        ✅ Creado
-│  ├── 02-Prompting-Basico/
-│  │  ├── 01-Estructura-Prompts.md   ✅ Creado
-│  │  ├── 02-Claridad.md            ✅ Creado
-│  │  ├── 03-Contexto.md            ✅ Creado
-│  │  ├── 04-Ejemplos.md            ✅ Creado
-│  │  └── 05-Iteracion.md           ✅ Creado
-│  ├── 03-Hablar-Antes-Pedir/        ⚙️ Generando (agente)
-│  │  ├── 01-Concepto.md            ✅ Creado
-│  │  ├── 02-Tecnica.md             ✅ Creado
-│  │  ├── 03-Ejercicio.md           ✅ Creado
-│  │  ├── 04-Comparacion.md         ✅ Creado
-│  │  └── 05-Casos-Reales.md        ✅ Creado
-│  ├── 04-Metodo-Karpathy/           ⚙️ Generando (agente)
-│  │  ├── 01-Introduccion.md        ✅ Creado
-│  │  ├── 02-Detalle.md             ✅ Creado
-│  │  ├── 03-Ejemplo-1.md           ✅ Creado
-│  │  ├── 04-Ejemplo-2.md           ⏳ Pendiente
-│  │  ├── 05-Ejercicio.md           ⏳ Pendiente
-│  │  ├── Karpathy.md               ⏳ Pendiente (MARP)
-│  ├── 05-Prompting-Avanzado/        ⏳ Pendiente
-│  ├── 06-Casos-Practicos/
-│  │  └── 06-Excel.md               ✅ Creado
-│  ├── 📁 datos/
-│  │  ├── evaluacion.xlsx           ✅ Copiado
-│  │  └── evaluacion_SOL.xlsx       ✅ Copiado
-│  └── 📁 img/                       📂 Listo
-│
-├── 📁 02-Gemas/                      ⏳ Pendiente
-│  ├── 📄 README.md                  ✅ Creado
-│  ├── 01-Que-Son-Gemas/            ⏳ Pendiente
-│  ├── 02-Tu-Primera-Gema/          ⏳ Pendiente
-│  ├── 03-Gema-Normativa/
-│  │  └── README.md                 ✅ Creado
-│  ├── 04-Gema-Contratos/           ⏳ Pendiente
-│  ├── 05-Gema-Subvenciones/        ⏳ Pendiente
-│  ├── 06-Gema-Expedientes/         ⏳ Pendiente
-│  ├── 07-Gema-Inventario/          ⏳ Pendiente
-│  ├── 08-Gema-Procedimientos/      ⏳ Pendiente
-│  ├── 09-Tu-Gema-Personal/         ⏳ Pendiente
-│  └── 📁 img/                      📂 Listo
-│
-├── 📁 03-IA-Agentica/               ⏳ Pendiente
-│  ├── 📄 README.md                 ✅ Creado
-│  ├── 01-Paradigma-Agentes/        ⏳ Pendiente
-│  ├── 02-Componentes/              ⏳ Pendiente
-│  ├── 03-Agentes-Practicos/        ⏳ Pendiente
-│  ├── 04-Agentes-Personales/       ⏳ Pendiente
-│  ├── 05-Hacia-El-Futuro/          ⏳ Pendiente
 │  └── 📁 img/                      📂 Listo
 │
 └── 📁 Extras/                        🟢 Completo

@@ -14,70 +14,80 @@ Este es el proyecto que un municipio implementaría de verdad.
 
 ### Define Agentes Necesarios
 
-```
-AGENTE 1: RECEPTOR
-├─ Rol: Recibe solicitudes
-├─ Fuentes: Email, web, presencial
-├─ Output: "Solicitud recibida en BD"
-
-AGENTE 2: VALIDADOR
-├─ Rol: Verifica documentación
-├─ Chequea: ¿Tiene todos documentos?
-├─ Output: "Válida" o "Falta: documento X"
-
-AGENTE 3: EVALUADOR
-├─ Rol: Aplica criterios de evaluación
-├─ Calcula: Puntuación según normativa
-├─ Output: "Puntuación: 45/100"
-
-AGENTE 4: DECISOR
-├─ Rol: Toma decisión
-├─ Lógica: SI >= 40 → APROBAR
-├─ Output: "Decisión: APROBAR"
-
-AGENTE 5: NOTIFICADOR
-├─ Rol: Comunica resultado
-├─ Envía: Email con resolución
-├─ Output: "Notificación enviada"
-
-AGENTE 6: REPORTERO
-├─ Rol: Genera análisis
-├─ Calcula: Estadísticas mensuales
-├─ Output: "Reporte: 120 aprobadas este mes"
+```mermaid
+graph TD
+    A["AGENTE 1: RECEPTOR"]
+    A --> A1["Recibe solicitudes"]
+    A --> A2["Fuentes: Email, web, presencial"]
+    
+    B["AGENTE 2: VALIDADOR"]
+    B --> B1["Verifica documentación"]
+    B --> B2["Output: Válida/Falta"]
+    
+    C["AGENTE 3: EVALUADOR"]
+    C --> C1["Aplica criterios"]
+    C --> C2["Output: Puntuación"]
+    
+    D["AGENTE 4: DECISOR"]
+    D --> D1["Toma decisión"]
+    D --> D2["Output: APROBAR/RECHAZAR"]
+    
+    E["AGENTE 5: NOTIFICADOR"]
+    E --> E1["Comunica resultado"]
+    E --> E2["Output: Notificación enviada"]
+    
+    F["AGENTE 6: REPORTERO"]
+    F --> F1["Genera análisis"]
+    F --> F2["Output: Estadísticas"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
 
 ### Mapea Dependencias
 
-```
-RECEPTOR → VALIDADOR → EVALUADOR → DECISOR → NOTIFICADOR
-   ↓           ↓          ↓         ↓           ↓
-   ├───────────────────────────────────────→ REPORTERO
-                                        (retroalimentación)
+```mermaid
+graph LR
+    A["RECEPTOR"] --> B["VALIDADOR"]
+    B --> C["EVALUADOR"]
+    C --> D["DECISOR"]
+    D --> E["NOTIFICADOR"]
+    A --> F["REPORTERO"]
+    B --> F
+    C --> F
+    D --> F
+    E --> F
 ```
 
 ## 🔧 Fase 2: Infraestructura (Semana 2-3)
 
 ### Setup Hermes
 
-```
-INSTALACIÓN:
-1. Servidor: AWS EC2 o similar
-2. Hermes: Deploy de imagen oficial
-3. BD: PostgreSQL centralizada
-4. APIs: Configurar conexiones
-5. Usuarios: Crear cuentas de acceso
+```mermaid
+graph TD
+    A["INSTALACIÓN HERMES"]
+    A --> A1["Servidor: AWS EC2"]
+    A --> A2["Hermes: Deploy imagen oficial"]
+    A --> A3["BD: PostgreSQL centralizada"]
+    A --> A4["APIs: Configurar conexiones"]
+    A --> A5["Usuarios: Crear cuentas"]
 ```
 
 ### Conecta Sistemas
 
+```mermaid
+graph TD
+    A["HERMES CENTRAL"]
+    A --> B["BD ciudadanos"]
+    A --> C["BD normativa"]
+    A --> D["API emails"]
+    A --> E["API pagos"]
+    A --> F["API AEAT"]
+    A --> G["Almacenamiento"]
 ```
-CONEXIONES:
-├─ BD ciudadanos (Oracle municipal)
-├─ BD normativa (documentos compartidos)
-├─ API emails (Gmail/Microsoft)
-├─ API pagos (integración tesorería)
-├─ API AEAT (validación)
-└─ Almacenamiento (archivos compartidos)
 ```
 
 ## 🤖 Fase 3: Desarrollo de Agentes (Semana 4-6)

@@ -37,13 +37,14 @@ Después de crear Tu Gema Personal:
 
 ## Estructura del proyecto
 
-```
-📁 09-Tu-Gema-Personal/
-├── README.md (este archivo)
-├── 01-Ideacion.md (¿Qué problema resuelve tu Gema?)
-├── 02-Plantilla.md (Template para construir tu Gema)
-├── 03-Desarrollo.md (Paso a paso: cómo hacerla)
-└── 04-Presentacion.md (Cómo presentarla a tu equipo)
+```mermaid
+graph TD
+    A["📁 09-Tu-Gema-Personal"]
+    A --> A1["README.md<br/>(este archivo)"]
+    A --> A2["01-Ideacion.md<br/>(¿Qué problema?)"]
+    A --> A3["02-Plantilla.md<br/>(Template)"]
+    A --> A4["03-Desarrollo.md<br/>(Paso a paso)"]
+    A --> A5["04-Presentacion.md<br/>(Cómo presentar)"]
 ```
 
 ### Qué encontrarás en cada sección
@@ -74,30 +75,36 @@ Después de crear Tu Gema Personal:
 
 ## Cronograma sugerido
 
+```mermaid
+graph TD
+    A["📅 CRONOGRAMA DEL PROYECTO"]
+    
+    B["📅 DÍA 1: 2 horas"]
+    B --> B1["Lee 01-Ideacion.md"]
+    B --> B2["Completa plantilla"]
+    B --> B3["Valida con jefe"]
+    
+    C["📅 DÍA 2: 2 horas"]
+    C --> C1["Lee 02-Plantilla.md"]
+    C --> C2["Completa secciones"]
+    C --> C3["Revisa con compañero"]
+    
+    D["📅 DÍA 3: 3 horas"]
+    D --> D1["Lee 03-Desarrollo.md"]
+    D --> D2["Construye tu Gema"]
+    D --> D3["Testa 5+ casos"]
+    D --> D4["Refina resultados"]
+    
+    E["📅 DÍA 4: 1-2 horas"]
+    E --> E1["Lee 04-Presentacion.md"]
+    E --> E2["Prepara demo"]
+    E --> E3["Presenta al equipo"]
+    E --> E4["Recoge feedback"]
+    
+    F["🔄 SEMANA 2+"]
+    F --> F1["Implementa feedback"]
+    F --> F2["Expande tu Gema"]
 ```
-Día 1 (2 horas):
-├─ Lee 01-Ideacion.md
-├─ Completa plantilla de idea
-└─ Valida con tu jefe
-
-Día 2 (2 horas):
-├─ Lee 02-Plantilla.md
-├─ Completa todas las secciones
-└─ Revisa con compañero
-
-Día 3 (3 horas):
-├─ Lee 03-Desarrollo.md
-├─ Construye tu Gema
-├─ Testa con 5+ casos reales
-└─ Refina basado en resultados
-
-Día 4 (1-2 horas):
-├─ Lee 04-Presentacion.md
-├─ Prepara demo
-├─ Presenta a equipo
-└─ Recoge feedback
-
-Semana 2+:
 ├─ Itera basado en feedback
 ├─ Documenta casos de éxito
 └─ Expande funcionalidades

@@ -276,8 +276,15 @@ Esto devuelve 0 si hay error. (Úsalo con cuidado)
 
 **Orientación:**
 
+```mermaid
+graph TD
+    A["📁 TallerIA-Dipu"]
+    A --> A1["00-Preparacion: Inicio"]
+    A --> A2["01-IA-Generativa: Bloque 1"]
+    A --> A3["02-Gemas: Bloque 2"]
+    A --> A4["03-IA-Agentica: Bloque 3"]
+    A --> A5["Extras: Soporte"]
 ```
-📁 TallerIA-Dipu
  ├─ README.md        ← Comienza aquí
  ├─ SETUP.md         ← Si falta herramientas
  ├─ 01-IA-Generativa

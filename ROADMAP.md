@@ -112,37 +112,39 @@ Target: Diputaciones, Municipios, Universidades
 
 ### V1.x - Temas Adicionales (Próximas 4 semanas)
 
-```
-A AGREGAR:
-├─ Ética de IA (¿Cuándo NO usar IA?)
-├─ Seguridad & Privacidad (RGPD profundo)
-├─ Regulación de IA (AI Act europeo)
-├─ Casos de Estudio (éxitos y fracasos locales)
-├─ Talleres por rol (personalizado):
-│  ├─ Para Abogados Administrativos
-│  ├─ Para Gestores RR.HH.
-│  ├─ Para Contadores
-│  └─ Para Directivos
-├─ Integración con herramientas específicas
-│  ├─ Power BI + IA
-│  ├─ Excel avanzado
-│  ├─ SAP/sistemas ERP
-│  └─ Workflows (Zapier, etc.)
-└─ Machine Learning básico (después IA Generativa)
+```mermaid
+graph TD
+    A["📚 TEMAS A AGREGAR"]
+    A --> B["🧠 Ética de IA"]
+    A --> C["🔒 Seguridad & Privacidad"]
+    A --> D["⚖️ Regulación de IA"]
+    A --> E["📖 Casos de Estudio"]
+    A --> F["👥 Talleres por rol"]
+    F --> F1["Abogados Administrativos"]
+    F --> F2["Gestores RR.HH."]
+    F --> F3["Contadores"]
+    F --> F4["Directivos"]
+    A --> G["🔗 Integraciones"]
+    G --> G1["Power BI + IA"]
+    G --> G2["Excel avanzado"]
+    G --> G3["SAP/Sistemas ERP"]
+    G --> G4["Workflows Zapier"]
+    A --> H["🤖 Machine Learning básico"]
 ```
 
 ### V2.x - Certificaciones (3-6 meses)
 
-```
-CREAR:
-├─ Certificación Nivel 1: "AI Fundamentals"
-├─ Certificación Nivel 2: "Gemas Specialist"
-├─ Certificación Nivel 3: "AI Architect"
-└─ Badges (Mozilla Open Badges)
-   ├─ "First Prompt"
-   ├─ "Gema Master"
-   ├─ "Chain Thinker"
-   └─ "Agent Designer"
+```mermaid
+graph TD
+    A["🎓 CERTIFICACIONES A CREAR"]
+    A --> B["Level 1: AI Fundamentals"]
+    A --> C["Level 2: Gemas Specialist"]
+    A --> D["Level 3: AI Architect"]
+    A --> E["🏅 Mozilla Open Badges"]
+    E --> E1["First Prompt"]
+    E --> E2["Gema Master"]
+    E --> E3["Chain Thinker"]
+    E --> E4["Agent Designer"]
 ```
 
 ---

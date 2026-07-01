@@ -61,43 +61,45 @@ PERSONA (Hoy):
 
 ### Paso 1: Recepción
 
-```
-CANALES DE ENTRADA:
-├─ Chat web
-├─ Email
-├─ WhatsApp
-├─ Teléfono (transcripción automática)
-├─ Redes sociales (si monitorizado)
-
-AGENTE RECIBE EN TODOS LOS CANALES SIMULTÁNEAMENTE
+```mermaid
+graph TD
+    A["📞 CANALES DE ENTRADA"]
+    A --> A1["💬 Chat web"]
+    A --> A2["📧 Email"]
+    A --> A3["📱 WhatsApp"]
+    A --> A4["☎️ Teléfono"]
+    A --> A5["📱 Redes Sociales"]
+    
+    B["🤖 AGENTE RECIBE EN TODOS<br/>SIMULTÁNEAMENTE"]
+    A1 --> B
+    A2 --> B
+    A3 --> B
+    A4 --> B
+    A5 --> B
 ```
 
 ### Paso 2: Clasificación Automática
 
+```mermaid
+graph TD
+    Q1["❓ CONSULTA 1: ¿Dónde está mi licencia?"]
+    Q1 --> Q1A["Tipo: SEGUIMIENTO"]
+    Q1 --> Q1B["Prioridad: MEDIA"]
+    Q1 --> Q1C["Especialidad: Urbanismo"]
+    Q1 --> Q1D["Acción: Consultar BD"]
+    
+    Q2["❓ CONSULTA 2: Se inundó mi sótano"]
+    Q2 --> Q2A["Tipo: RECLAMO"]
+    Q2 --> Q2B["Prioridad: ALTA"]
+    Q2 --> Q2C["Especialidad: Legal"]
+    Q2 --> Q2D["Acción: Escalar"]
+    
+    Q3["❓ CONSULTA 3: ¿Horario de atención?"]
+    Q3 --> Q3A["Tipo: INFORMACIÓN"]
+    Q3 --> Q3B["Prioridad: BAJA"]
+    Q3 --> Q3C["Especialidad: FAQ"]
+    Q3 --> Q3D["Acción: Respuesta Automática"]
 ```
-CONSULTA 1: "¿Dónde está mi licencia de obra?"
-├─ Tipo: SEGUIMIENTO
-├─ Prioridad: MEDIA
-├─ Especialidad: Urbanismo
-└─ Acción: Consultar BD
-
-CONSULTA 2: "Se inundó mi sótano por rotura municipal. ¿Quién paga?"
-├─ Tipo: RECLAMO
-├─ Prioridad: ALTA
-├─ Especialidad: Infraestructuras + Legal
-└─ Acción: Investigar + Escalar
-
-CONSULTA 3: "¿Cuál es el horario de atención?"
-├─ Tipo: INFORMACIÓN
-├─ Prioridad: BAJA
-├─ Especialidad: FAQ
-└─ Acción: Responder automáticamente
-
-CONSULTA 4: "Mi hijo perdió la identificación, ¿qué hago?"
-├─ Tipo: TRÁMITE
-├─ Prioridad: MEDIA
-├─ Especialidad: Documentación
-└─ Acción: Guiar + Citar
 ```
 
 ### Paso 3: Decisión Automática vs Escalada

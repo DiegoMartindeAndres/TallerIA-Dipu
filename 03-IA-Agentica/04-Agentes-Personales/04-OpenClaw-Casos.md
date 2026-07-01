@@ -16,32 +16,32 @@ Hoy: Alguien revisa BOE y BOCM manualmente (5-10 horas/semana).
 Problema: Se pierden cambios importantes.
 
 ### La Solución con OpenClaw
-```
-CONFIGURACIÓN:
-
-Capacidad 1 (APIs):
-├─ API BOE: Conectar a feeds del Boletín Oficial
-├─ API BOCM: Conectar a normativa de la Comunidad
-└─ API local: Feed interno de cambios
-
-Capacidad 3 (Archivos):
-├─ Guardar PDFs en carpeta local
-
-Capacidad 4 (Lógica):
-├─ Si encuentra normativa sobre "urbanismo"
-│  → Comparar con normativa anterior
-│  → Generar "cambios detectados"
-│  → Alertar a departamento
-└─ Si encuentra sentencia judicial sobre "vivienda"
-   → Generar análisis
-   → Sugerir ajustes en procedimientos
-
-RESULTADO:
-Cada mañana, email con:
-├─ Cambios legislativos relevantes
-├─ Comparación con normativa anterior
-├─ Impacto en tus procedimientos
-├─ Acciones sugeridas
+```mermaid
+graph TD
+    A["⚙️ CONFIGURACIÓN"]
+    
+    B["Capacidad 1: APIs"]
+    B --> B1["API BOE"]
+    B --> B2["API BOCM"]
+    B --> B3["API local"]
+    
+    C["Capacidad 3: Archivos"]
+    C --> C1["Guardar PDFs"]
+    
+    D["Capacidad 4: Lógica"]
+    D --> D1["Si detecta 'urbanismo'<br/>→ Comparar + Alertar"]
+    D --> D2["Si detecta 'vivienda'<br/>→ Analizar + Sugerir"]
+    
+    E["✉️ RESULTADO DIARIO"]
+    E --> E1["Cambios legislativos"]
+    E --> E2["Comparación normativa"]
+    E --> E3["Impacto en procedimientos"]
+    E --> E4["Acciones sugeridas"]
+    
+    A --> B
+    A --> C
+    A --> D
+    D --> E
 ```
 
 ### Beneficios

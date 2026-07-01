@@ -69,35 +69,21 @@ Al completar Bloque 1 hasta aquí, ya sabes:
 
 ## 📊 Ruta de Aprendizaje
 
+```mermaid
+graph TD
+    A["🟢 Conceptos Básicos<br/>Bloque 1.1<br/>Qué es IA, tokens, limitaciones"]
+    B["🟡 Prompting Básico<br/>Bloque 1.2<br/>Estructura, claridad, contexto"]
+    C["🟡 Hablar Antes Pedir<br/>Bloque 1.3<br/>Método de preguntas previas"]
+    D["🟠 Método Karpathy<br/>Bloque 1.4<br/>Sistema, Tarea, Formato"]
+    E["⭐ Prompting Avanzado<br/>AQUÍ<br/>Roles, Cadenas, Chain-of-Thought"]
+    F["💎 Gemas<br/>Bloque 2<br/>Asistentes Especializados"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
-┌─────────────────────────────────────┐
-│   Conceptos Básicos (Bloque 1.1)    │
-│ Qué es IA, tokens, limitaciones     │
-└──────────┬──────────────────────────┘
-           │
-           ▼
-┌─────────────────────────────────────┐
-│   Prompting Básico (Bloque 1.2)     │
-│ Estructura, claridad, contexto      │
-└──────────┬──────────────────────────┘
-           │
-           ▼
-┌─────────────────────────────────────┐
-│ Hablar Antes Pedir (Bloque 1.3)     │
-│ Método de preguntas previas         │
-└──────────┬──────────────────────────┘
-           │
-           ▼
-┌─────────────────────────────────────┐
-│   Método Karpathy (Bloque 1.4)      │
-│ Sistema, Tarea, Formato             │
-└──────────┬──────────────────────────┘
-           │
-           ▼
-┌─────────────────────────────────────┐
-│ Prompting Avanzado (AQUÍ)           │
-│ ⭐ Roles, Cadenas, Chain-of-Thought │
-└──────────┬──────────────────────────┘
            │
            ▼
 ┌─────────────────────────────────────┐

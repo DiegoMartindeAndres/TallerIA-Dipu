@@ -24,15 +24,19 @@ En este bloque aprenderás a **automatizar** tasks completas sin intervención h
 
 ### La Evolución
 
-```
-Chatbot:      "¿Cuál es la capital de Francia?" → "París"
-
-Agente:       "Necesito generar un informe de subvenciones"
-              → Planifica pasos
-              → Accede a bases de datos
-              → Redacta documento
-              → Valida formatos
-              → Entrega resultado
+```mermaid
+graph TD
+    A["🤖 CHATBOT"]
+    A --> A1["'¿Cuál es la capital?'"]
+    A --> A2["'París'"]
+    
+    B["🦾 AGENTE"]
+    B --> B1["'Genera informe'"]
+    B --> B2["Planifica"]
+    B --> B3["Accede BDs"]
+    B --> B4["Redacta"]
+    B --> B5["Valida"]
+    B --> B6["Entrega resultado"]
 ```
 
 ### Diferencias Clave
