@@ -1,0 +1,74 @@
+# OS
+.DS_Store
+Thumbs.db
+.env
+.env.local
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+
+# Archivos de sistema
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node (si algún script)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Excel/LibreOffice temporal
+~$*.xlsx
+~$*.xls
+*.xlsx#
+*.xls#
+.~lock.*
+
+# Google Sheets locales
+.credentials/
+token.json
+token.pickle
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/
+
+# OS Specific
+.gitkeep
