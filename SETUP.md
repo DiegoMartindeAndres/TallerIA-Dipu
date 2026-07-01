@@ -140,12 +140,62 @@ Probablemente ya lo tienes. Asegúrate de que esté actualizado.
 
 ---
 
-## 🚀 Tu Primer Prompt en 2 Minutos
+## 🎯 Tu Primer Descubrimiento: "Prompt 0"
 
-¡Vamos a hacer tu **primer experimento**!
+Antes de hacer prompts "serios", vamos a hacer un **experimento** para entender algo fundamental sobre la IA:
 
-### Paso 1: Abre ChatGPT
-Entra en https://chat.openai.com
+### 💡 El Concepto: "Cada respuesta es única"
+
+La IA NO funciona como una calculadora (que siempre da el mismo resultado). Cada vez que preguntas, puede dar una respuesta **ligeramente diferente**. Esto es una **característica**, no un error.
+
+### 🔬 El Experimento
+
+**Paso 1: Abre Google Gemini** (herramienta por defecto en la Diputación)
+- Entra en https://gemini.google.com
+- Inicia sesión con tu cuenta Google (la del trabajo si la tienes)
+
+> 📌 **¿Por qué Gemini?** En la Diputación de Segovia se usa Gemini por defecto (integración con Google Workspace, RGPD, datos en servidores españoles). Durante el taller usaremos principalmente Gemini, aunque los ejercicios funcionan en ChatGPT y Claude.
+
+**Paso 2: Haz esta pregunta**
+```text
+¿Quiénes fueron los Comuneros de Castilla? 
+Resume en 3-4 párrafos.
+```
+
+**Paso 3: Copia la respuesta** (guárdala en el portapapeles o en un documento)
+
+**Paso 4: Haz la MISMA pregunta de nuevo**
+Verás que la respuesta es **LIGERAMENTE DISTINTA**. Las ideas principales son iguales, pero el orden, los énfasis, los ejemplos... son diferentes.
+
+**Paso 5: Compara con un compañero**
+- Pídele que haga la misma pregunta en Gemini
+- Compara su respuesta con la tuya
+- **Descubrirás que son distintas**
+
+### 🤔 ¿Por Qué Sucede Esto?
+
+La IA tiene un parámetro llamado "temperatura" que controla la creatividad/variabilidad. Es como:
+- **Baja temperatura**: Siempre respuestas similares (calculadora)
+- **Alta temperatura**: Respuestas muy distintas (poeta creativo)
+
+Los mejores resultados están en el medio.
+
+### ✅ Lo Que Has Aprendido
+
+Con este simple experimento, ya entiendes:
+- ✅ Que la IA no es determinística
+- ✅ Que cada persona obtiene resultados distintos (¡esto es normal!)
+- ✅ Que Gemini es la herramienta de la Diputación
+- ✅ Que puedes hacer preguntas directas
+
+---
+
+## 🚀 Tu Primer Prompt "Serio" en 2 Minutos
+
+¡Ahora sí, vamos a hacer tu **primer prompt estructurado**!
+
+### Paso 1: Sigue en Gemini
+Ya tienes Gemini abierto del experimento anterior. Bien.
 
 ### Paso 2: Escribe este prompt
 ```text
@@ -157,10 +207,10 @@ mejor qué tipo de tareas hago a diario.
 ```
 
 ### Paso 3: Presiona Enter
-Mira qué preguntas te hace la IA. Respóndelas.
+Mira qué preguntas te hace la IA. Son preguntas **inteligentes** que te ayudarán a tener una conversación más productiva.
 
 ### Paso 4: Continúa la conversación
-Basa tus respuestas en tu trabajo real.
+Responde basándote en tu trabajo real. No necesitas ser preciso: "datos de subvenciones", "expedientes administrativos", "comunicaciones con ciudadanos"...
 
 ---
 
